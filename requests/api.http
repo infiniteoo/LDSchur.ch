@@ -1,0 +1,6 @@
+POST http://localhost:7777/api/url/shorten
+Content-Type: application/json
+
+{
+  "longUrl": "https://www.alibaba.com/product-detail/Hot-sale-Second-Hand-Shacman-Used_62429496527.html?spm=a27aq.industry_category_productlist.dt_8.1.50cc750ddGkX0P"
+}
