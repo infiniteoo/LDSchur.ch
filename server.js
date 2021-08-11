@@ -16,5 +16,4 @@ app.get("/api", (req, res) => {
   res.json({ message: "hello, you've reached the api route." });
 });
 
-app.listen(PORT, () => console.log(`🚀 Server Live 🌎 @ port ${PORT}`))
-
+app.listen(PORT, () => console.log(`🚀 Server Live 🌎 @ port ${PORT}`));
