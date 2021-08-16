@@ -6,6 +6,7 @@ import { Grid } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     borderRadius: "50%",
+    marginTop: "20px",
   },
 });
 

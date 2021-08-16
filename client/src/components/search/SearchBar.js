@@ -7,7 +7,7 @@ const SearchBar = () => {
       <form className="searchBox" noValidate autoComplete="off">
         <TextField
           id="outlined-basic"
-          label="Enter URL"
+          label="Enter Link to Convert"
           variant="outlined"
           fullWidth={true}
         />
