@@ -2,7 +2,6 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -26,7 +25,7 @@ const Header = () => {
           Welcome to LDSchur.ch
         </Typography>
         <Typography className={classes.root} variant="" component="h2">
-          A URL shortener for LDS Church websites
+          A URL shortener for LDS Church links
         </Typography>
       </Grid>
     </Grid>

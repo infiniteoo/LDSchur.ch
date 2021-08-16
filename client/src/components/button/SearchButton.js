@@ -11,6 +11,10 @@ const useStyles = makeStyles({
     color: "#E7D777",
     width: "500px",
     height: "75px",
+    "&:hover": {
+      backgroundColor: "#E7D777",
+      color: "black",
+    },
   },
 });
 

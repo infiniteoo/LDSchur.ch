@@ -6,6 +6,7 @@ const SearchBar = () => {
     <div>
       <form noValidate autoComplete="off">
         <TextField
+          autoFocus
           id="outlined-basic"
           label="Enter Link to Convert"
           variant="outlined"
