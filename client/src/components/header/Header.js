@@ -15,23 +15,21 @@ const useStyles = makeStyles({
 const Header = () => {
   const classes = useStyles();
   return (
-    <div>
-      <Grid
-        container
-        alignItems="center"
-        alignContent="center"
-        justifyContent="center"
-      >
-        <Grid item lg={12} md={12} sm={12} xs={12}>
-          <Typography className={classes.root} variant="h1" component="h2">
-            Welcome to LDSchur.ch
-          </Typography>
-          <Typography className={classes.root} variant="" component="h2">
-            A URL shortener for LDS Church websites
-          </Typography>
-        </Grid>
+    <Grid
+      container
+      alignItems="center"
+      alignContent="center"
+      justifyContent="center"
+    >
+      <Grid item lg={12} md={12} sm={12} xs={12}>
+        <Typography className={classes.root} variant="h1" component="h2">
+          Welcome to LDSchur.ch
+        </Typography>
+        <Typography className={classes.root} variant="" component="h2">
+          A URL shortener for LDS Church websites
+        </Typography>
       </Grid>
-    </div>
+    </Grid>
   );
 };
 

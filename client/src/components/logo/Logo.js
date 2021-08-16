@@ -13,18 +13,16 @@ const useStyles = makeStyles({
 const Logo = () => {
   const classes = useStyles();
   return (
-    <div>
-      <Grid
-        container
-        alignItems="center"
-        alignContent="center"
-        justifyContent="center"
-      >
-        <Grid item lg={1} md={1} sm={1} xs={1}>
-          <img src={LDSLogo} alt="Minimal LDS Logo" className={classes.root} />
-        </Grid>
+    <Grid
+      container
+      alignItems="center"
+      alignContent="center"
+      justifyContent="center"
+    >
+      <Grid item xl={2} lg={2} md={2} sm={4} xs={6}>
+        <img src={LDSLogo} alt="Minimal LDS Logo" className={classes.root} />
       </Grid>
-    </div>
+    </Grid>
   );
 };
 
