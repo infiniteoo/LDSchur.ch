@@ -24,7 +24,7 @@ const Header = () => {
         <Typography className={classes.root} variant="h1" component="h2">
           Welcome to LDSchur.ch
         </Typography>
-        <Typography className={classes.root} variant="" component="h2">
+        <Typography className={classes.root} variant="h5" component="h2">
           A URL shortener for LDS Church links
         </Typography>
       </Grid>

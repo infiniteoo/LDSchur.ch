@@ -12,7 +12,8 @@ app.use("/api/url", require("./routes/url"));
 
 const PORT = process.env.PORT || 7777;
 
-app.get("/api", (req, res) => {
+app.post("/api", (req, res) => {
+  console.log("api route touched from client");
   res.json({ message: "hello, you've reached the api route." });
 });
 

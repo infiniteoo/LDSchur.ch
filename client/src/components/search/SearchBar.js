@@ -1,7 +1,8 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
+import { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   return (
     <div>
       <form noValidate autoComplete="off">
@@ -11,6 +12,10 @@ const SearchBar = () => {
           label="Enter Link to Convert"
           variant="outlined"
           fullWidth={true}
+          onChange={(e) => {
+            props.setUrlToConvert(e.target.value);
+            console.log(props.urlToConvert);
+          }}
         />
       </form>
     </div>
