@@ -1,5 +1,4 @@
 import React from "react";
-import Paper from "@material-ui/core/Paper";
 import LDSLogo from "../../imgs/lds.png";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
@@ -18,20 +17,10 @@ const Logo = () => {
         container
         alignItems="center"
         alignContent="center"
-        justify="center"
-        lg="12"
-        md="12"
-        sm="12"
-        xs="12"
+        justifyContent="center"
       >
-        <Grid item>
-          <Paper variant="outlined">
-            <img
-              src={LDSLogo}
-              alt="Minimal LDS Logo"
-              className={classes.root}
-            />
-          </Paper>
+        <Grid item lg={1} md={1} sm={1} xs={1}>
+          <img src={LDSLogo} alt="Minimal LDS Logo" className={classes.root} />
         </Grid>
       </Grid>
     </div>
