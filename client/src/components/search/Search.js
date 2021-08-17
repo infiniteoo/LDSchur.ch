@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
@@ -8,6 +8,12 @@ import SearchButton from "../button/SearchButton";
 
 const Search = () => {
   const [urlToConvert, setUrlToConvert] = useState("");
+  const [shortURL, setShortURL] = useState("");
+
+  useEffect(() => {
+    console.log("returned short url", shortURL);
+    return () => {};
+  }, [shortURL]);
   return (
     <div className="container">
       <Container>
@@ -17,7 +23,7 @@ const Search = () => {
           urlToConvert={urlToConvert}
           setUrlToConvert={setUrlToConvert}
         />
-        <SearchButton urlToConvert={urlToConvert} />
+        <SearchButton urlToConvert={urlToConvert} setShortURL={setShortURL} />
       </Container>
     </div>
   );

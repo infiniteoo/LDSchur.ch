@@ -43,7 +43,8 @@ const SearchButton = (props) => {
     console.log(config);
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        console.log(JSON.stringify(response.data.shortUrl));
+        props.setShortURL(JSON.stringify(response.data.shortUrl));
       })
       .catch(function (error) {
         console.log(error);
