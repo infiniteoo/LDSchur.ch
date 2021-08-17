@@ -3,7 +3,6 @@ import Button from "@material-ui/core/Button";
 import axios from "axios";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
-import { useState } from "react";
 
 const useStyles = makeStyles({
   root: {
@@ -22,9 +21,33 @@ const useStyles = makeStyles({
 const SearchButton = (props) => {
   const classes = useStyles();
 
-  const handleClick = () => {
+  const handleClick = async () => {
     // make axios call to convert link
     console.log(props.urlToConvert);
+
+    var data = JSON.stringify({
+      longUrl: props.urlToConvert,
+    });
+
+    var config = {
+      method: "post",
+      url: "http://localhost:7777/api/url/shorten",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Point": "*",
+        "Access-Control-Allow-Credentials": "true",
+      },
+      data: data,
+    };
+
+    console.log(config);
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   return (
