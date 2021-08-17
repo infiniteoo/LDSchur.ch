@@ -12,7 +12,6 @@ const Search = () => {
 
   useEffect(() => {
     console.log("returned short url", shortURL);
-    return () => {};
   }, [shortURL]);
   return (
     <div className="container">
@@ -23,7 +22,11 @@ const Search = () => {
           urlToConvert={urlToConvert}
           setUrlToConvert={setUrlToConvert}
         />
-        <SearchButton urlToConvert={urlToConvert} setShortURL={setShortURL} />
+        <SearchButton
+          urlToConvert={urlToConvert}
+          setShortURL={setShortURL}
+          setUrlToConvert={setUrlToConvert}
+        />
       </Container>
     </div>
   );

@@ -21,10 +21,9 @@ const useStyles = makeStyles({
 const SearchButton = (props) => {
   const classes = useStyles();
 
-  const handleClick = async () => {
+  const handleClick = async (e) => {
     // make axios call to convert link
-    console.log(props.urlToConvert);
-
+    e.preventDefault();
     var data = JSON.stringify({
       longUrl: props.urlToConvert,
     });
@@ -40,11 +39,10 @@ const SearchButton = (props) => {
       data: data,
     };
 
-    console.log(config);
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data.shortUrl));
         props.setShortURL(JSON.stringify(response.data.shortUrl));
+        props.setUrlToConvert("");
       })
       .catch(function (error) {
         console.log(error);

@@ -11,9 +11,9 @@ const SearchBar = (props) => {
           label="Enter Link to Convert"
           variant="outlined"
           fullWidth={true}
+          value={props.urlToConvert}
           onChange={(e) => {
             props.setUrlToConvert(e.target.value);
-            console.log(props.urlToConvert);
           }}
         />
       </form>
