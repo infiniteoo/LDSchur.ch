@@ -41,6 +41,7 @@ const SearchButton = (props) => {
 
     axios(config)
       .then(function (response) {
+        console.log(response);
         props.setShortURL(JSON.stringify(response.data.shortUrl));
         props.setUrlToConvert("");
       })
