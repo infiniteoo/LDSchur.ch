@@ -22,7 +22,8 @@ router.post("/shorten", async (req, res) => {
     isPorn(psl.get(extractHostname(longUrl)), async (err, status) => {
       if (status) {
         console.log("this is an unworthy link for our site");
-        return res.json("porn site");
+        res.json("porn site");
+        return;
       } else {
         console.log("this is not a porn site");
 
@@ -35,7 +36,8 @@ router.post("/shorten", async (req, res) => {
             console.log(
               `contains banned keyword: ${keyword}. this is an unworthy link for our site`
             );
-            return res.json(`banned keyword`);
+            res.json(`banned keyword`);
+            return;
           }
         });
 
@@ -44,19 +46,23 @@ router.post("/shorten", async (req, res) => {
             console.log("returned url:", url);
             if (url !== "banned") {
               console.log(url);
-              return res.json(url);
+              res.json(url);
+              return;
             } else {
-              return res.json("banned keyword");
+              /* res.json("banned keyword"); */
+              return;
             }
           })
           .catch((err) => {
-            return res.json(err);
+            console.log(err);
+            return;
           });
       }
     });
   } else {
     console.log(`valid-url defines "${longUrl}" as an invalid long url`);
-    return res.json("Invalid url");
+    res.json("Invalid url");
+    return;
   }
 });
 
