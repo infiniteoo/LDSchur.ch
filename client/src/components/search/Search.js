@@ -29,7 +29,7 @@ const Search = () => {
           setUrlToConvert={setUrlToConvert}
         />
 
-        <Result />
+        <Result shortURL={shortURL} />
       </Container>
     </div>
   );
