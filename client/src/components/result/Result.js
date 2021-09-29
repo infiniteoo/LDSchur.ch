@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
 import Box from "@material-ui/core/Box";
 import { Grid } from "@material-ui/core";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 const Result = () => {
   return (
@@ -23,7 +24,10 @@ const Result = () => {
           </CardContent>
           <CardActions>
             <Grid container justifyContent="center">
-              <Button size="small">Copy to Clipboard</Button>
+              <Button size="small">
+                <ContentCopyIcon />
+                Copy to Clipboard
+              </Button>
             </Grid>
           </CardActions>
         </Card>
@@ -31,13 +35,5 @@ const Result = () => {
     </Grid>
   );
 };
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
-);
 
 export default Result;

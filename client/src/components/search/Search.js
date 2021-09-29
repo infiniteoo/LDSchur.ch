@@ -28,6 +28,7 @@ const Search = () => {
           setShortURL={setShortURL}
           setUrlToConvert={setUrlToConvert}
         />
+
         <Result />
       </Container>
     </div>
