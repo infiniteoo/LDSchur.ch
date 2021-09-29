@@ -5,6 +5,7 @@ import Header from "../header/Header";
 import SearchBar from "./SearchBar";
 import Container from "@material-ui/core/Container";
 import SearchButton from "../button/SearchButton";
+import Result from "../result/Result";
 
 const Search = () => {
   const [urlToConvert, setUrlToConvert] = useState("");
@@ -27,6 +28,7 @@ const Search = () => {
           setShortURL={setShortURL}
           setUrlToConvert={setUrlToConvert}
         />
+        <Result />
       </Container>
     </div>
   );
