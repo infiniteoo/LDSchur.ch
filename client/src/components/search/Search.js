@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
 import SearchBar from "./SearchBar";
@@ -31,10 +31,7 @@ const Search = () => {
           setShortURL={setShortURL}
           setUrlToConvert={setUrlToConvert}
         />
-
-        
-          <Result shortURL={shortURL} />
-       
+        {shortURL ? <Result shortURL={shortURL} /> : null}
       </Container>
     </div>
   );
