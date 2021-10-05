@@ -34,9 +34,6 @@
   },
   "homepage": "https://github.com/infiniteoo/LDSchur.ch#readme",
   "dependencies": {
-    "@emotion/react": "^11.4.1",
-    "@mui/icons-material": "^5.0.1",
-    "@mui/material": "^5.0.1",
     "concurrently": "^6.2.1",
     "config": "^3.3.6",
     "cors": "^2.8.5",

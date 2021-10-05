@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
 import SearchBar from "./SearchBar";
@@ -14,6 +14,7 @@ const Search = () => {
   useEffect(() => {
     console.log("returned short url", shortURL);
   }, [shortURL]);
+
   return (
     <div className="container">
       <Container>
@@ -23,13 +24,17 @@ const Search = () => {
           urlToConvert={urlToConvert}
           setUrlToConvert={setUrlToConvert}
         />
+
         <SearchButton
+          shortURL={shortURL}
           urlToConvert={urlToConvert}
           setShortURL={setShortURL}
           setUrlToConvert={setUrlToConvert}
         />
 
-        <Result shortURL={shortURL} />
+        
+          <Result shortURL={shortURL} />
+       
       </Container>
     </div>
   );

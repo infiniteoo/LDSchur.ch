@@ -3,6 +3,7 @@ import Button from "@material-ui/core/Button";
 import axios from "axios";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const useStyles = makeStyles({
   root: {
@@ -59,15 +60,17 @@ const SearchButton = (props) => {
       alignContent="center"
       justifyContent="center"
     >
-      <Grid item>
-        <Button
-          variant="contained"
-          className={classes.root}
-          onClick={handleClick}
-        >
-          Convert Link
-        </Button>
-      </Grid>
+      <CopyToClipboard text={props.shortURL}>
+        <Grid item>
+          <Button
+            variant="contained"
+            className={classes.root}
+            onClick={handleClick}
+          >
+            Convert Link
+          </Button>
+        </Grid>
+      </CopyToClipboard>
     </Grid>
   );
 };
