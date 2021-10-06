@@ -67,7 +67,7 @@ const SearchButton = (props) => {
             className={classes.root}
             onClick={handleClick}
           >
-            Convert Link
+            Convert
           </Button>
         </Grid>
       </CopyToClipboard>

@@ -30,8 +30,8 @@ const Header = () => {
           Welcome to LDSchur.ch
         </Typography>
         <hr></hr>
-        <Typography className={classes.headline} variant="h6" component="h2">
-          A URL Shortener for The Church of Jesus Christ of Latter-Day Saints
+        <Typography className={classes.headline} variant="h5" component="h2">
+          A <strong>safe</strong> URL shortener for friends, family, and church
         </Typography>
       </Grid>{" "}
     </Grid>

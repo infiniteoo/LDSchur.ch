@@ -26,8 +26,8 @@ const useStyles = makeStyles({
   img: {
     height: "55px",
     border: "2px solid white",
-    borderRadius: "50%",
-    margin: "10px",
+    borderRadius: "10px",
+    margin: "5px",
     backgroundColor: "black",
   },
   navHolder: {

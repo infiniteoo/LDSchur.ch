@@ -7,6 +7,7 @@ import Container from "@material-ui/core/Container";
 import SearchButton from "../button/SearchButton";
 import Result from "../result/Result";
 import { makeStyles } from "@material-ui/core/styles";
+import Middle from "../middleSplash/Middle";
 
 const useStyles = makeStyles({
   jumbotron: {
@@ -31,6 +32,7 @@ const Search = () => {
           <Header />
           <Logo />
         </div>
+
         <SearchBar
           urlToConvert={urlToConvert}
           setUrlToConvert={setUrlToConvert}
