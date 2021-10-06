@@ -45,6 +45,7 @@ const Search = () => {
           setUrlToConvert={setUrlToConvert}
         />
         {shortURL ? <Result shortURL={shortURL} /> : null}
+        <Middle />
       </Container>
     </div>
   );
