@@ -28,6 +28,7 @@ const useStyles = makeStyles({
     border: "2px solid white",
     borderRadius: "50%",
     margin: "10px",
+    backgroundColor: "black",
   },
   navHolder: {
     display: "flex",

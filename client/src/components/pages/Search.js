@@ -2,12 +2,21 @@ import React, { useState, useEffect } from "react";
 
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
-import SearchBar from "./SearchBar";
+import SearchBar from "../search/SearchBar";
 import Container from "@material-ui/core/Container";
 import SearchButton from "../button/SearchButton";
 import Result from "../result/Result";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  jumbotron: {
+    display: "flex",
+    marginBottom: "50px",
+  },
+});
 
 const Search = () => {
+  const classes = useStyles();
   const [urlToConvert, setUrlToConvert] = useState("");
   const [shortURL, setShortURL] = useState("");
 
@@ -18,8 +27,10 @@ const Search = () => {
   return (
     <div className="container">
       <Container>
-        <Header />
-        <Logo />
+        <div className={classes.jumbotron}>
+          <Header />
+          <Logo />
+        </div>
         <SearchBar
           urlToConvert={urlToConvert}
           setUrlToConvert={setUrlToConvert}

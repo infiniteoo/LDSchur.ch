@@ -6,7 +6,12 @@ import { Grid } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     fontFamily: ["Georama"],
-    fontWeight: "bold",
+    fontWeight: "400",
+    textAlign: "center",
+  },
+  headline: {
+    fontFamily: ["Georama"],
+    fontWeight: "1900",
     textAlign: "center",
   },
 });
@@ -24,10 +29,11 @@ const Header = () => {
         <Typography className={classes.root} variant="h1" component="h2">
           Welcome to LDSchur.ch
         </Typography>
-        <Typography className={classes.root} variant="h6" component="h2">
+        <hr></hr>
+        <Typography className={classes.headline} variant="h6" component="h2">
           A URL Shortener for The Church of Jesus Christ of Latter-Day Saints
         </Typography>
-      </Grid>
+      </Grid>{" "}
     </Grid>
   );
 };
