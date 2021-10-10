@@ -51,8 +51,8 @@ const Result = (props) => {
                     severity="success"
                     sx={{
                       width: "100%",
-                      backgroundColor: "black",
-                      color: "gold",
+                      backgroundColor: "#E7D777",
+                      color: "black",
                     }}
                   >
                     Link copied to clipboard!

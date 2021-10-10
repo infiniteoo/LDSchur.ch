@@ -60,7 +60,11 @@ export default function Middle() {
           </div>
           <h2>Inspire Trust</h2>
           <p>
-            Other link shortner services are not as safe as us. From pornography, to violence, to blasphemous material, you aren't guaranteed the link you'll be clicking will be family and church friendly.  With us, you know you're only getting safe, reliable content.
+            Other link shortner services are not as safe as us. From
+            pornography, to violence, to blasphemous material, you aren't
+            guaranteed the link you'll be clicking will be family and church
+            friendly. With us, you know you're only getting safe, reliable
+            content.
           </p>
         </div>
         <div>
@@ -69,10 +73,11 @@ export default function Middle() {
           </div>
           <h2>Boost Results</h2>
           <p>
-            On top of better deliverability and click-through, rich link-level
-            data gives you crucial insight into your link engagement so your
-            team can make smarter decisions around its content and
-            communications.
+            We're not just a link shortner. We're a link shortner that's built
+            on top of SafeLink &#174; technology, which is a custom filter that
+            determines if a link is safe to share. Plus, LDSchur.ch
+            links are more attractive and compact, resulting in more
+            click-throughs and deliverability.
           </p>
         </div>
         <div>

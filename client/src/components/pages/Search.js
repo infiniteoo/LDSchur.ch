@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import FAQ from "../middleSplash/FAQ";
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
 import SearchBar from "../search/SearchBar";
@@ -49,6 +49,7 @@ const Search = () => {
         />
         {shortURL ? <Result shortURL={shortURL} /> : null}
         <Middle />
+        <FAQ />
       </Container>
     </div>
   );
