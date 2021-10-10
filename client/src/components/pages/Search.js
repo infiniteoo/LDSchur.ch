@@ -14,6 +14,11 @@ const useStyles = makeStyles({
     display: "flex",
     marginBottom: "50px",
   },
+  "@media (max-width: 780px)": {
+    jumbotron: {
+      display: "block",
+    },
+  },
 });
 
 const Search = () => {
@@ -32,12 +37,10 @@ const Search = () => {
           <Header />
           <Logo />
         </div>
-
         <SearchBar
           urlToConvert={urlToConvert}
           setUrlToConvert={setUrlToConvert}
         />
-
         <SearchButton
           shortURL={shortURL}
           urlToConvert={urlToConvert}

@@ -22,12 +22,19 @@ const useStyles = makeStyles({
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
     fontFamily: ["Georama"],
+    gap: "20px",
+    border: "5px dashed lightgrey",
+    borderRadius: "10px",
+    padding: "50px",
   },
   icons: {
-    fontSize: "7rem !important",
+    /* fontSize: "5rem !important", */
+    transform: "scale(4)",
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
+    color: "#E7D777",
+    padding: "20px",
   },
 });
 
@@ -37,6 +44,8 @@ export default function Middle() {
     <>
       <div className={classes.scroll}>
         <p>Scroll to learn more</p>
+        <ArrowDownward />
+        <ArrowDownward />
         <ArrowDownward />
       </div>
       <div className={classes.middle}>
@@ -51,9 +60,7 @@ export default function Middle() {
           </div>
           <h2>Inspire Trust</h2>
           <p>
-            With more clicks comes increased brand recognition and consumer
-            trust in your communications—which in turn inspires even more
-            engagement with your links. (It’s a wonderful cycle.)
+            Other link shortner services are not as safe as us. From pornography, to violence, to blasphemous material, you aren't guaranteed the link you'll be clicking will be family and church friendly.  With us, you know you're only getting safe, reliable content.
           </p>
         </div>
         <div>
@@ -80,6 +87,7 @@ export default function Middle() {
           </p>
         </div>
       </div>
+      <hr />
     </>
   );
 }
