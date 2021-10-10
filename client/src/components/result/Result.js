@@ -49,7 +49,11 @@ const Result = (props) => {
                   <Alert
                     onClose={handleClose}
                     severity="success"
-                    sx={{ width: "100%" }}
+                    sx={{
+                      width: "100%",
+                      backgroundColor: "black",
+                      color: "gold",
+                    }}
                   >
                     Link copied to clipboard!
                   </Alert>

@@ -26,7 +26,7 @@ const useStyles = makeStyles({
   img: {
     height: "55px",
     border: "2px solid white",
-    borderRadius: "10px",
+    clipPath: "ellipse(25% 40% at 50% 50%)",
     margin: "5px",
     backgroundColor: "black",
   },
