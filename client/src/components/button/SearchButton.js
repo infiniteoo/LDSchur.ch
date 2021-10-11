@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 
 const useStyles = makeStyles({
   root: {
@@ -20,6 +22,17 @@ const useStyles = makeStyles({
 });
 
 const SearchButton = (props) => {
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+  const [open, setOpen] = useState(false);
   const classes = useStyles();
 
   const handleClick = async (e) => {
@@ -43,9 +56,21 @@ const SearchButton = (props) => {
     axios(config)
       .then(function (response) {
         console.log(response);
-        props.setShortURL(
-          JSON.stringify(response.data.shortUrl).replace(/^"(.*)"$/, "$1")
-        );
+        // if response is a banned keyword or a porn site show error msg
+        if (
+          response.data === "banned keyword" ||
+          response.data === "porn site"
+        ) {
+          setOpen(true);
+
+          // display error message
+        } else {
+          // if response data is not "porn site" or "banned keyword" then setShortURL
+          props.setShortURL(
+            JSON.stringify(response.data.shortUrl).replace(/^"(.*)"$/, "$1")
+          );
+        }
+
         props.setUrlToConvert("");
       })
       .catch(function (error) {
@@ -71,6 +96,20 @@ const SearchButton = (props) => {
           </Button>
         </Grid>
       </CopyToClipboard>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert
+          onClose={handleClose}
+          severity="error"
+          sx={{
+            width: "100%",
+            backgroundColor: "red",
+            color: "white",
+          }}
+        >
+          Sorry, that link is not allowed.
+        </Alert>
+      </Snackbar>
+      ;
     </Grid>
   );
 };

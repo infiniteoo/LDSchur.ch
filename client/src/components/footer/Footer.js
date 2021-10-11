@@ -4,6 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import logo from "../../imgs/lds.png";
 
 const useStyles = makeStyles({
   footer: {
@@ -47,6 +48,9 @@ const useStyles = makeStyles({
     paddingRight: "10px",
     color: "#E7D777",
     textDecoration: "none",
+  },
+  img: {
+    width: "50px",
   },
 });
 
@@ -204,6 +208,21 @@ function Footer() {
               <a className={classes.link} href="#">
                 Reviews
               </a>
+            </li>
+          </ul>
+          <ul style={{ listStyleType: "none", color: "white", marginTop: "0" }}>
+            <li>
+              <img src={logo} className={classes.img} alt="" />
+            </li>
+
+            <li>
+              <p style={{ margin: "0", fontSize: "14px" }}>LDSchur.ch</p>
+            </li>
+            <li>
+              <p style={{ margin: "0", fontSize: "14px" }}>© 2021</p>
+            </li>
+            <li>
+              <p style={{ margin: "0", fontSize: "14px" }}>Boise, Idaho</p>
             </li>
           </ul>
         </div>
