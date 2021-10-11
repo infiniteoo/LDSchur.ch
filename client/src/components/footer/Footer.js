@@ -58,117 +58,138 @@ function Footer() {
         <div className={classes.divider}></div>
         <div className={classes.footerLists}>
           <ul style={{ listStyleType: "none" }}>
-            <li className={classes.listHead}>BROWSE</li>
+            <li className={classes.listHead}>Why LDSchur.ch?</li>
             <li>
               <a className={classes.link} href="#">
-                Streaming Library
+                URL Shortening 101
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Live TV
+                Integration & API
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Live News
+                Enterprise Class
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Live Sports
+                Pricing
+              </a>
+            </li>
+          </ul>
+
+          <ul style={{ listStyleType: "none" }}>
+            <li className={classes.listHead}>Solutions</li>
+            <li>
+              <a className={classes.link} href="#">
+                Social Media
+              </a>
+            </li>
+            <li>
+              <a className={classes.link} href="#">
+                Digital Marketing
+              </a>
+            </li>
+            <li>
+              <a className={classes.link} href="#">
+                Customer Service
+              </a>
+            </li>
+            <li>
+              <a className={classes.link} href="#">
+                For Developers
               </a>
             </li>
           </ul>
           <ul style={{ listStyleType: "none" }}>
+            <li className={classes.listHead}>Features</li>
             <li>
               <a className={classes.link} href="#">
-                TV Shows
+                Link Management
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Movies
+                Branded Links
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Originals
+                Mobile Links
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Networks
+                Campaigns
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Kids
+                Management & Analytics
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                FX on Hulu
-              </a>
-            </li>
-          </ul>
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              <a className={classes.link} href="#">
-                Hulu, Disney+, and ESPN+
-              </a>
-            </li>
-            <li>
-              <a className={classes.link} href="#">
-                Disney Bundle
-              </a>
-            </li>
-            <li>
-              <a className={classes.link} href="#">
-                HBO Max
-              </a>
-            </li>
-            <li>
-              <a className={classes.link} href="#">
-                Cinimax
-              </a>
-            </li>
-            <li>
-              <a className={classes.link} href="#">
-                Showtime
-              </a>
-            </li>
-            <li>
-              <a className={classes.link} href="#">
-                STARZ
+                QR Codes
               </a>
             </li>
           </ul>
           <ul style={{ listStyleType: "none" }}>
-            <li className={classes.listHead}>HELP</li>
+            <li className={classes.listHead}>Resources</li>
             <li>
               <a className={classes.link} href="#">
-                Account & Billing
+                Blog
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Plans & Pricing
+                Resource Library
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Supported Devices
+                Developers
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Accesibility
+                Support
               </a>
             </li>
           </ul>
           <ul style={{ listStyleType: "none" }}>
-            <li className={classes.listHead}>ABOUT US</li>
+            <li className={classes.listHead}>Legal</li>
+            <li>
+              <a className={classes.link} href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a className={classes.link} href="#">
+                Terms of Service
+              </a>
+            </li>
+          </ul>
+          <ul style={{ listStyleType: "none" }}>
+            <li className={classes.listHead}>Company</li>
+            <li>
+              <a className={classes.link} href="#">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a className={classes.link} href="#">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a className={classes.link} href="#">
+                Partners
+              </a>
+            </li>
             <li>
               <a className={classes.link} href="#">
                 Press
@@ -176,12 +197,12 @@ function Footer() {
             </li>
             <li>
               <a className={classes.link} href="#">
-                Jobs
+                Contact
               </a>
             </li>
             <li>
               <a className={classes.link} href="#">
-                Contact
+                Reviews
               </a>
             </li>
           </ul>

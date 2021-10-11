@@ -38,6 +38,7 @@ const useStyles = makeStyles({
     top: "0",
     width: "100%",
     marginBottom: "1rem",
+    zIndex: "100",
   },
 });
 
