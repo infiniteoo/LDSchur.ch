@@ -28,7 +28,6 @@ const useStyles = makeStyles({
     padding: "50px",
   },
   icons: {
-    /* fontSize: "5rem !important", */
     transform: "scale(4)",
     textAlign: "center",
     justifyContent: "center",
@@ -59,7 +58,7 @@ export default function Middle() {
             <HealthAndSafetyIcon />
           </div>
           <h2>Inspire Trust</h2>
-          <p>
+          <p style={{ fontSize: "1.25rem" }}>
             Other link shortner services are not as safe as us. From
             pornography, to violence, to blasphemous material, you aren't
             guaranteed the link you'll be clicking will be family and church
@@ -72,12 +71,12 @@ export default function Middle() {
             <ShowChartIcon />
           </div>
           <h2>Boost Results</h2>
-          <p>
+          <p style={{ fontSize: "1.25rem" }}>
             We're not just a link shortner. We're a link shortner that's built
             on top of SafeLink &#174; technology, which is a custom filter that
-            determines if a link is safe to share. Plus, LDSchur.ch
-            links are more attractive and compact, resulting in more
-            click-throughs and deliverability.
+            determines if a link is safe to share. Plus, LDSchur.ch links are
+            more attractive and compact, resulting in more click-throughs and
+            deliverability.
           </p>
         </div>
         <div>
@@ -85,14 +84,13 @@ export default function Middle() {
             <ControlCameraIcon />
           </div>
           <h2>Gain control</h2>
-          <p>
+          <p style={{ fontSize: "1.25rem" }}>
             Take credit for your content and learn more about how it’s consumed
             by enabling auto-branding—a feature that ensures your brand remains
             in any link someone shortens pointing to your website.
           </p>
         </div>
       </div>
-      <hr />
     </>
   );
 }

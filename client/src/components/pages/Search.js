@@ -8,6 +8,7 @@ import SearchButton from "../button/SearchButton";
 import Result from "../result/Result";
 import { makeStyles } from "@material-ui/core/styles";
 import Middle from "../middleSplash/Middle";
+import Footer from "../footer/Footer";
 
 const useStyles = makeStyles({
   jumbotron: {
@@ -50,6 +51,7 @@ const Search = () => {
         {shortURL ? <Result shortURL={shortURL} /> : null}
         <Middle />
         <FAQ />
+        <Footer />
       </Container>
     </div>
   );

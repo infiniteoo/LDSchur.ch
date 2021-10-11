@@ -3,12 +3,12 @@ import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 
-
 const useStyles = makeStyles({
   root: {
     fontFamily: ["Georama"],
     fontWeight: "400",
     textAlign: "center",
+    paddingTop: "8rem",
   },
   headline: {
     fontFamily: ["Georama"],
