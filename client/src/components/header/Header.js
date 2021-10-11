@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     fontWeight: "400",
     textAlign: "center",
     paddingTop: "8rem",
+    zIndex: "1",
   },
   headline: {
     fontFamily: ["Georama"],
