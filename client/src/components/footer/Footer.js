@@ -1,5 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const useStyles = makeStyles({
   footer: {
@@ -34,16 +38,15 @@ const useStyles = makeStyles({
     margin: "30px 0",
   },
 
-  ".socialIcons img": {
-    width: "25px",
-    height: "25px",
-    marginRight: "25px",
-  },
-
   footerContainer: {
     maxWidth: "1100px",
     margin: "auto",
     padding: "40px",
+  },
+  socialIcons: {
+    paddingRight: "10px",
+    color: "#E7D777",
+    textDecoration: "none",
   },
 });
 
@@ -185,17 +188,17 @@ function Footer() {
         </div>
         <div className={classes.divider}></div>
         <div className={classes.socialIcons}>
-          <a className={classes.link} href="#">
-            <img src="img/facebook.svg" alt="" />
+          <a className={classes.socialIcons} href="#">
+            <FacebookIcon />
           </a>
-          <a className={classes.link} href="#">
-            <img src="img/twitter.svg" alt="" />
+          <a className={classes.socialIcons} href="#">
+            <TwitterIcon />
           </a>
-          <a className={classes.link} href="#">
-            <img src="img/youtube.svg" alt="" />
+          <a className={classes.socialIcons} href="#">
+            <YouTubeIcon />
           </a>
-          <a className={classes.link} href="#">
-            <img src="img/instagram.svg" alt="" />
+          <a className={classes.socialIcons} href="#">
+            <InstagramIcon />
           </a>
         </div>
       </div>
