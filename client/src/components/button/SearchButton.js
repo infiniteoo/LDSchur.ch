@@ -61,9 +61,8 @@ const SearchButton = (props) => {
           response.data === "banned keyword" ||
           response.data === "porn site"
         ) {
-          setOpen(true);
-
           // display error message
+          setOpen(true);
         } else {
           // if response data is not "porn site" or "banned keyword" then setShortURL
           props.setShortURL(
