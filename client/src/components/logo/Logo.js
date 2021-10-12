@@ -7,8 +7,13 @@ const useStyles = makeStyles({
   root: {
     borderRadius: "50%",
     background: "#e0e0e0",
-    marginTop: "20px",
+    marginTop: "5rem",
     boxShadow: "41px 41px 66px #777777, -5px -0px 66px #ffffff",
+  },
+  "@media(max-width: 768px)": {
+    root: {
+      marginTop: "1rem",
+    },
   },
 });
 
