@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     fontWeight: "bold",
     textAlign: "center",
     fontSize: "55px",
+    marginTop: "40px",
   },
   scroll: {
     marginTop: "50px",

@@ -5,20 +5,10 @@ import Container from "react-bootstrap/Container";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-/* import resume from "../Assets/resume.pdf"; */
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(true);
-
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-
-  /*   window.addEventListener("scroll", scrollHandler); */
 
   return (
     <Navbar

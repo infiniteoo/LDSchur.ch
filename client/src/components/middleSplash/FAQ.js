@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     fontWeight: "bold",
     textAlign: "center",
     fontSize: "45px",
+    marginTop: "40px",
   },
   accordion: {
     fontFamily: ["Georama !important"],
