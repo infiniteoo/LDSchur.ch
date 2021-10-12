@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     padding: "50px",
   },
   icons: {
-    transform: "scale(4)",
+    transform: "scale(3)",
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",

@@ -81,7 +81,13 @@ function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Other URL shortening services allow you to convert ANY long link into a short link.  This means they could send you to a fake link, or a link unsuitable for a wholesome person's eyes, such as pornography or violent content.  SafeLink&#174; Technology is a built-in custom filter only found on on our platform, that removes the ability to do this, and ensures when a user receives an LDSchur.ch link, they are guaranteed to be safe. 
+            Other URL shortening services allow you to convert ANY long link
+            into a short link. This means they could send you to a fake link, or
+            a link unsuitable for a wholesome person's eyes, such as pornography
+            or violent content. SafeLink&#174; Technology is a built-in custom
+            filter only found on on our platform, that removes the ability to do
+            this, and ensures when a user receives an LDSchur.ch link, they are
+            guaranteed to be safe.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -98,7 +104,9 @@ function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            While the creators of this website are active, temple-recommended members of The Church of Jesus Christ of Latter-Day Saints, we are not directly affiliated, endorsed or run by the church.
+            While the creators of this website are active, temple-recommended
+            members of The Church of Jesus Christ of Latter-Day Saints, we are
+            not directly affiliated, endorsed or run by the church.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -114,7 +122,14 @@ function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            We built this website to serve our Lord Jesus Christ and to help people find the best short links for their websites.  We hope you enjoy using it, and we hope you will join us in our mission to spread the Gospel of Jesus Christ.  We also hope you will share your own LDSchur.ch links with your friends and family.  In addition, this site was built as a demostration of our development skills to showcase our ability on our portfolio, and one day to find full-time employment as a full-stack web developer.
+            We built this website to serve our Lord Jesus Christ and to help
+            people find the best short links for their websites. We hope you
+            enjoy using it, and we hope you will join us in our mission to
+            spread the Gospel of Jesus Christ. We also hope you will share your
+            own LDSchur.ch links with your friends and family. In addition, this
+            site was built as a demostration of our development skills to
+            showcase our ability on our portfolio, and one day to find full-time
+            employment as a full-stack web developer.
           </Typography>
         </AccordionDetails>
       </Accordion>
