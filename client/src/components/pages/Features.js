@@ -5,10 +5,12 @@ import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import jesusPortrait from "../../imgs/baby_bible.jpg";
 import Footer from "../footer/Footer";
-import socialmedia from "../../imgs/socialmedia.jpg";
-import fordevelopers from "../../imgs/fordevelopers.jpg";
-import customerservice from "../../imgs/customerservice.jpg";
-import digitalmarketing from "../../imgs/digitalmarketing.jpg";
+import analytics from "../../imgs/analytics.jpg";
+import brandedlinks from "../../imgs/brandedlinks.jpg";
+import campaigns from "../../imgs/campaigns.jpg";
+import linkmanagement from "../../imgs/linkmanagement.jpg";
+import mobilelinks from "../../imgs/mobilelinks.jpg";
+import qrcodes from "../../imgs/qrcodes.jpg";
 
 const useStyles = makeStyles({
   jumbotron: {
@@ -81,7 +83,7 @@ export default function Features() {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
-            <img src={socialmedia} alt="" style={{ borderRadius: "10px" }} />
+            <img src={linkmanagement} alt="" style={{ borderRadius: "10px" }} />
           </Grid>
           <Grid item xs={5} sm={5} md={5} lg={5}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
@@ -108,11 +110,7 @@ export default function Features() {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
-            <img
-              src={digitalmarketing}
-              alt=""
-              style={{ borderRadius: "10px" }}
-            />
+            <img src={brandedlinks} alt="" style={{ borderRadius: "10px" }} />
           </Grid>
           <Grid item xs={5} sm={5} md={5} lg={5}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
@@ -138,11 +136,7 @@ export default function Features() {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
-            <img
-              src={customerservice}
-              alt=""
-              style={{ borderRadius: "10px" }}
-            />
+            <img src={mobilelinks} alt="" style={{ borderRadius: "10px" }} />
           </Grid>
           <Grid item xs={5} sm={5} md={5} lg={5}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
@@ -167,11 +161,7 @@ export default function Features() {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
-            <img
-              src={customerservice}
-              alt=""
-              style={{ borderRadius: "10px" }}
-            />
+            <img src={campaigns} alt="" style={{ borderRadius: "10px" }} />
           </Grid>
           <Grid item xs={5} sm={5} md={5} lg={5}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
@@ -196,11 +186,7 @@ export default function Features() {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
-            <img
-              src={customerservice}
-              alt=""
-              style={{ borderRadius: "10px" }}
-            />
+            <img src={analytics} alt="" style={{ borderRadius: "10px" }} />
           </Grid>
           <Grid item xs={5} sm={5} md={5} lg={5}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
@@ -226,7 +212,7 @@ export default function Features() {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
-            <img src={fordevelopers} alt="" style={{ borderRadius: "10px" }} />
+            <img src={qrcodes} alt="" style={{ borderRadius: "10px" }} />
           </Grid>
           <Grid item xs={5} sm={5} md={5} lg={5}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
