@@ -13,6 +13,7 @@ const useStyles = makeStyles({
     marginRight: "50px",
     fontSize: "30px",
     display: "flex",
+    color: "#E7D777",
   },
   link: {
     color: "#E7D777",

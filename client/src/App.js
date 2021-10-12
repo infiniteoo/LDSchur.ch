@@ -6,11 +6,13 @@ import Search from "./components/pages/Search";
 import Resources from "./components/pages/Resources";
 import Features from "./components/pages/Features";
 import Solutions from "./components/pages/Solutions";
+import Navbar2 from "./components/navbar/Navbar2";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Navbar2 />
       <Switch>
         <Route exact path="/" component={Search} />
         <Route exact path="/why" component={Why} />
