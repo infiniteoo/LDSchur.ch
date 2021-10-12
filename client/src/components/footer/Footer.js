@@ -79,22 +79,22 @@ function Footer() {
           <ul style={{ listStyleType: "none" }}>
             <li className={classes.listHead}>Why LDSchur.ch?</li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/why">
                 URL Shortening 101
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/why">
                 Integration & API
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/why">
                 Enterprise Class
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/why">
                 Pricing
               </a>
             </li>
@@ -103,22 +103,22 @@ function Footer() {
           <ul style={{ listStyleType: "none" }}>
             <li className={classes.listHead}>Solutions</li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/solutions">
                 Social Media
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/solutions">
                 Digital Marketing
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/solutions">
                 Customer Service
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/solutions">
                 For Developers
               </a>
             </li>
@@ -126,32 +126,32 @@ function Footer() {
           <ul style={{ listStyleType: "none" }}>
             <li className={classes.listHead}>Features</li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/features">
                 Link Management
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/features">
                 Branded Links
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/features">
                 Mobile Links
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/features">
                 Campaigns
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/features">
                 Management & Analytics
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/features">
                 QR Codes
               </a>
             </li>
@@ -159,22 +159,22 @@ function Footer() {
           <ul style={{ listStyleType: "none" }}>
             <li className={classes.listHead}>Resources</li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/resources">
                 Blog
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/resources">
                 Resource Library
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/resources">
                 Developers
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/resources">
                 Support
               </a>
             </li>
@@ -182,12 +182,12 @@ function Footer() {
           <ul style={{ listStyleType: "none" }}>
             <li className={classes.listHead}>Legal</li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 Terms of Service
               </a>
             </li>
@@ -195,32 +195,32 @@ function Footer() {
           <ul style={{ listStyleType: "none" }}>
             <li className={classes.listHead}>Company</li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 About Us
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 Careers
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 Partners
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 Press
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 Contact
               </a>
             </li>
             <li>
-              <a className={classes.link} href="#">
+              <a className={classes.link} href="/home">
                 Reviews
               </a>
             </li>
@@ -228,16 +228,16 @@ function Footer() {
         </div>
         <div className="socialholder">
           <div className={classes.socialIcons}>
-            <a className={classes.socialIcons} href="#">
+            <a className={classes.socialIcons} href="https://facebook.com">
               <FacebookIcon />
             </a>
-            <a className={classes.socialIcons} href="#">
+            <a className={classes.socialIcons} href="https://twitter.com">
               <TwitterIcon />
             </a>
-            <a className={classes.socialIcons} href="#">
+            <a className={classes.socialIcons} href="https://youtube.com">
               <YouTubeIcon />
             </a>
-            <a className={classes.socialIcons} href="#">
+            <a className={classes.socialIcons} href="https://instagram.com">
               <InstagramIcon />
             </a>
           </div>
