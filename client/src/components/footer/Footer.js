@@ -58,6 +58,15 @@ const useStyles = makeStyles({
   socialholder: {
     display: "flex",
   },
+  "@media(max-width: 855px)": {
+    footerLists: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      flexDirection: "column",
+      justifyContent: "center",
+      textAlign: "center",
+    },
+  },
 });
 
 function Footer() {
