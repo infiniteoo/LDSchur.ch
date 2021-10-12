@@ -27,13 +27,23 @@ const useStyles = makeStyles({
     borderRadius: "10px",
     padding: "50px",
   },
+  spanicon: {
+    "& svg": {
+      fontSize: "100",
+    },
+  },
+
   icons: {
-    transform: "scale(3)",
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
     color: "#E7D777",
     padding: "20px",
+  },
+  "@media(max-width: 768px)": {
+    factoids: {
+      gridTemplateColumns: "repeat(1, 1fr)",
+    },
   },
 });
 
@@ -55,7 +65,9 @@ export default function Middle() {
       <div className={classes.factoids}>
         <div>
           <div className={classes.icons}>
-            <HealthAndSafetyIcon />
+            <span className={classes.spanicon}>
+              <HealthAndSafetyIcon style={{ fontSize: "75px" }} />
+            </span>
           </div>
           <h2>Inspire Trust</h2>
           <p style={{ fontSize: "1.25rem" }}>
@@ -68,7 +80,7 @@ export default function Middle() {
         </div>
         <div>
           <div className={classes.icons}>
-            <ShowChartIcon />
+            <ShowChartIcon style={{ fontSize: "75px" }} />
           </div>
           <h2>Boost Results</h2>
           <p style={{ fontSize: "1.25rem" }}>
@@ -81,7 +93,7 @@ export default function Middle() {
         </div>
         <div>
           <div className={classes.icons}>
-            <ControlCameraIcon />
+            <ControlCameraIcon style={{ fontSize: "75px" }} />
           </div>
           <h2>Gain control</h2>
           <p style={{ fontSize: "1.25rem" }}>

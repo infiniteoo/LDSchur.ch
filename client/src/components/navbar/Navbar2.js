@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 /* import resume from "../Assets/resume.pdf"; */
 function NavBar() {
-  const [expand, updateExpanded] = useState(true);
+  const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(true);
 
   function scrollHandler() {

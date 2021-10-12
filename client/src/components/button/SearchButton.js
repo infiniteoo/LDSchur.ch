@@ -108,7 +108,6 @@ const SearchButton = (props) => {
           Sorry, that link is not allowed.
         </Alert>
       </Snackbar>
-      ;
     </Grid>
   );
 };
