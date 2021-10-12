@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(true);
+  const [navColour] = useState(true);
 
   return (
     <Navbar

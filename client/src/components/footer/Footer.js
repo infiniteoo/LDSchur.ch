@@ -4,7 +4,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import logo from "../../imgs/lds.png";
 
 const useStyles = makeStyles({
   footer: {

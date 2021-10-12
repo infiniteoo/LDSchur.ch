@@ -70,7 +70,7 @@ export default function Solutions() {
     <Container>
       <div className={classes.jumbotron}>
         <img src={jesusPortrait} className={classes.img} alt="" />
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Typography
               className={classes.headline}

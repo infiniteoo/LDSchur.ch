@@ -1,7 +1,6 @@
 import "./App.css";
 import Why from "./components/pages/Why";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
 import Search from "./components/pages/Search";
 import Resources from "./components/pages/Resources";
 import Features from "./components/pages/Features";
@@ -11,7 +10,6 @@ import Navbar2 from "./components/navbar/Navbar2";
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
       <Navbar2 />
       <Switch>
         <Route exact path="/" component={Search} />
