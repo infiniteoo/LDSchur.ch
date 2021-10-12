@@ -52,6 +52,13 @@ const useStyles = makeStyles({
     padding: "20px",
     marginTop: "10px",
   },
+  img2: {
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+    margin: "auto",
+    maxWidth: "640px",
+  },
 });
 
 export default function Why() {
@@ -81,7 +88,7 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={classroom}
@@ -107,7 +114,7 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={programming}
@@ -133,7 +140,7 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={enterprise}
@@ -159,7 +166,7 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={pricing}

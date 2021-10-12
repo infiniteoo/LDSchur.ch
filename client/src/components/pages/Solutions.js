@@ -52,6 +52,13 @@ const useStyles = makeStyles({
     padding: "20px",
     marginTop: "10px",
   },
+  img2: {
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+    margin: "auto",
+    maxWidth: "640px",
+  },
 });
 
 export default function Solutions() {
@@ -81,7 +88,7 @@ export default function Solutions() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={socialmedia}
@@ -107,7 +114,7 @@ export default function Solutions() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={digitalmarketing}
@@ -132,7 +139,7 @@ export default function Solutions() {
         <strong>Customer Service</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={customerservice}
@@ -157,7 +164,7 @@ export default function Solutions() {
         <strong>For Developers</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={fordevelopers}

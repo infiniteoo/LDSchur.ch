@@ -52,6 +52,14 @@ const useStyles = makeStyles({
     border: "4px dotted lightgrey",
     padding: "20px",
     marginTop: "10px",
+    alignContent: "center",
+  },
+  img2: {
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+    margin: "auto",
+    maxWidth: "640px",
   },
 });
 
@@ -82,12 +90,17 @@ export default function Resources() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={blog}
             alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+            style={{
+              borderRadius: "10px",
+              width: "100%",
+              padding: "20px",
+              maxWidth: "640px",
+            }}
           />
         </div>
         <div>
@@ -108,7 +121,7 @@ export default function Resources() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={library}
@@ -133,7 +146,7 @@ export default function Resources() {
         <strong>Developers</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={developer}
@@ -157,7 +170,7 @@ export default function Resources() {
         <strong>Support</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={support}

@@ -54,6 +54,13 @@ const useStyles = makeStyles({
     padding: "20px",
     marginTop: "10px",
   },
+  img2: {
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+    margin: "auto",
+    maxWidth: "640px",
+  },
 });
 
 export default function Features() {
@@ -83,7 +90,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={linkmanagement}
@@ -109,7 +116,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={brandedlinks}
@@ -135,7 +142,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={mobilelinks}
@@ -161,7 +168,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={campaigns}
@@ -187,7 +194,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={analytics}
@@ -213,7 +220,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div>
+        <div className={classes.img2}>
           {" "}
           <img
             src={qrcodes}
