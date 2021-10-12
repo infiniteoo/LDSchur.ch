@@ -48,9 +48,15 @@ const useStyles = makeStyles({
     paddingRight: "10px",
     color: "#E7D777",
     textDecoration: "none",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
   },
   img: {
     width: "50px",
+  },
+  socialholder: {
+    display: "flex",
   },
 });
 
@@ -210,37 +216,25 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <ul style={{ listStyleType: "none", color: "white", marginTop: "0" }}>
-            <li>
-              <img src={logo} className={classes.img} alt="" />
-            </li>
+        </div>
+        <div className="socialholder">
+          <div className={classes.socialIcons}>
+            <a className={classes.socialIcons} href="#">
+              <FacebookIcon />
+            </a>
+            <a className={classes.socialIcons} href="#">
+              <TwitterIcon />
+            </a>
+            <a className={classes.socialIcons} href="#">
+              <YouTubeIcon />
+            </a>
+            <a className={classes.socialIcons} href="#">
+              <InstagramIcon />
+            </a>
+          </div>
+        </div>
 
-            <li>
-              <p style={{ margin: "0", fontSize: "14px" }}>LDSchur.ch</p>
-            </li>
-            <li>
-              <p style={{ margin: "0", fontSize: "14px" }}>© 2021</p>
-            </li>
-            <li>
-              <p style={{ margin: "0", fontSize: "14px" }}>Boise, Idaho</p>
-            </li>
-          </ul>
-        </div>
         <div className={classes.divider}></div>
-        <div className={classes.socialIcons}>
-          <a className={classes.socialIcons} href="#">
-            <FacebookIcon />
-          </a>
-          <a className={classes.socialIcons} href="#">
-            <TwitterIcon />
-          </a>
-          <a className={classes.socialIcons} href="#">
-            <YouTubeIcon />
-          </a>
-          <a className={classes.socialIcons} href="#">
-            <InstagramIcon />
-          </a>
-        </div>
       </div>
     </footer>
   );

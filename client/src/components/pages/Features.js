@@ -62,7 +62,7 @@ export default function Features() {
     <Container>
       <div className={classes.jumbotron}>
         <img src={jesusPortrait} className={classes.img} alt="" />
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Typography
               className={classes.headline}
@@ -80,7 +80,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={linkmanagement} alt="" style={{ borderRadius: "10px" }} />
@@ -107,7 +107,7 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={brandedlinks} alt="" style={{ borderRadius: "10px" }} />
@@ -133,7 +133,7 @@ export default function Features() {
         <strong>Mobile Links</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={mobilelinks} alt="" style={{ borderRadius: "10px" }} />
@@ -158,7 +158,7 @@ export default function Features() {
         <strong>Campaigns</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={campaigns} alt="" style={{ borderRadius: "10px" }} />
@@ -183,7 +183,7 @@ export default function Features() {
         <strong>Management & Analytics</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={analytics} alt="" style={{ borderRadius: "10px" }} />
@@ -209,7 +209,7 @@ export default function Features() {
         <strong>QR Codes</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={qrcodes} alt="" style={{ borderRadius: "10px" }} />

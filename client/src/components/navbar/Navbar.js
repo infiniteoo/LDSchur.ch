@@ -6,7 +6,7 @@ const useStyles = makeStyles({
   root: {
     fontFamily: ["Georama"],
     backgroundColor: "#000",
-
+    width: "100%",
     justifyContent: "flex-end",
     padding: "10px",
     marginTop: "10px",
@@ -36,7 +36,7 @@ const useStyles = makeStyles({
     backgroundColor: "#000",
     position: "fixed",
     top: "0",
-    width: "100%",
+    width: "100vw",
     marginBottom: "1rem",
     zIndex: "100",
   },

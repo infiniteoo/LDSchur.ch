@@ -60,7 +60,7 @@ export default function Why() {
     <Container>
       <div className={classes.jumbotron}>
         <img src={jesusPortrait} className={classes.img} alt="" />
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Typography
               className={classes.headline}
@@ -78,7 +78,7 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={classroom} alt="" style={{ borderRadius: "10px" }} />
@@ -105,7 +105,7 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={programming} alt="" style={{ borderRadius: "10px" }} />
@@ -131,7 +131,7 @@ export default function Why() {
         <strong>Enterprise Class</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={enterprise} alt="" style={{ borderRadius: "10px" }} />
@@ -157,7 +157,7 @@ export default function Why() {
         <strong>Pricing</strong>
       </Typography>
       <div className={classes.infoContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={7} sm={7} md={7} lg={7}>
             {" "}
             <img src={pricing} alt="" style={{ borderRadius: "10px" }} />
