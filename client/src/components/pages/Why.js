@@ -49,15 +49,8 @@ const useStyles = makeStyles({
     fontSize: "1.5rem",
     fontFamily: ["Georama"],
     border: "4px dotted lightgrey",
-
+    padding: "20px",
     marginTop: "10px",
-    display: "grid",
-    gridTemplateColumns: "1fr",
-  },
-  "@media (max-width: 1200px)": {
-    infoContainer: {
-      gridAutoRows: "auto",
-    },
   },
 });
 

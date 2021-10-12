@@ -80,26 +80,25 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={7} sm={7} md={7} lg={7}>
-            {" "}
-            <img src={linkmanagement} alt="" style={{ borderRadius: "10px" }} />
-          </Grid>
-          <Grid item xs={5} sm={5} md={5} lg={5}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-            harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-            magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-            voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-            provident ut reprehenderit est quas harum doloribus ullam explicabo
-            ex! Explicabo provident natus omnis atque sunt architecto minima
-            veritatis nam expedita officiis voluptatum fugiat eos saepe,
-            assumenda excepturi fugit molestias? Fuga accusantium harum
-            doloremque eligendi vitae! Porro nemo, atque aspernatur ea esse, cum
-            placeat enim dolor numquam beatae accusamus rem fugit aut delectus
-            explicabo quidem, saepe optio praesentium adipisci repellat amet
-            magnam. Veritatis, ipsa?
-          </Grid>
-        </Grid>
+        <div>
+          {" "}
+          <img
+            src={linkmanagement}
+            alt=""
+            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+          />
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
+          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
+          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
+          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
+          provident ut reprehenderit est quas harum doloribus ullam explicabo
+          ex! Explicabo provident natus omnis atque sunt architecto minima
+          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
+          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
+          vitae! Porro nemo, atque aspernatur ea esse.
+        </div>
       </div>
 
       <Typography className={classes.subheadline} variant="h3" component="h3">
@@ -107,129 +106,131 @@ export default function Features() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={7} sm={7} md={7} lg={7}>
-            {" "}
-            <img src={brandedlinks} alt="" style={{ borderRadius: "10px" }} />
-          </Grid>
-          <Grid item xs={5} sm={5} md={5} lg={5}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-            harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-            magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-            voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-            provident ut reprehenderit est quas harum doloribus ullam explicabo
-            ex! Explicabo provident natus omnis atque sunt architecto minima
-            veritatis nam expedita officiis voluptatum fugiat eos saepe,
-            assumenda excepturi fugit molestias? Fuga accusantium harum
-            doloremque eligendi vitae! Porro nemo, atque aspernatur ea esse, cum
-            placeat enim dolor numquam beatae accusamus rem fugit aut delectus
-            explicabo quidem, saepe optio praesentium adipisci repellat amet
-            magnam. Veritatis, ipsa?
-          </Grid>
-        </Grid>
+        <div>
+          {" "}
+          <img
+            src={brandedlinks}
+            alt=""
+            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+          />
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
+          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
+          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
+          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
+          provident ut reprehenderit est quas harum doloribus ullam explicabo
+          ex! Explicabo provident natus omnis atque sunt architecto minima
+          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
+          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
+          vitae! Porro nemo, atque aspernatur ea esse.
+        </div>
       </div>
 
       <Typography className={classes.subheadline} variant="h3" component="h3">
         <strong>Mobile Links</strong>
       </Typography>
+
       <div className={classes.infoContainer}>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={7} sm={7} md={7} lg={7}>
-            {" "}
-            <img src={mobilelinks} alt="" style={{ borderRadius: "10px" }} />
-          </Grid>
-          <Grid item xs={5} sm={5} md={5} lg={5}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-            harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-            magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-            voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-            provident ut reprehenderit est quas harum doloribus ullam explicabo
-            ex! Explicabo provident natus omnis atque sunt architecto minima
-            veritatis nam expedita officiis voluptatum fugiat eos saepe,
-            assumenda excepturi fugit molestias? Fuga accusantium harum
-            doloremque eligendi vitae! Porro nemo, atque aspernatur ea esse, cum
-            placeat enim dolor numquam beatae accusamus rem fugit aut delectus
-            explicabo quidem, saepe optio praesentium adipisci repellat amet
-            magnam. Veritatis, ipsa?
-          </Grid>
-        </Grid>
+        <div>
+          {" "}
+          <img
+            src={mobilelinks}
+            alt=""
+            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+          />
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
+          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
+          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
+          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
+          provident ut reprehenderit est quas harum doloribus ullam explicabo
+          ex! Explicabo provident natus omnis atque sunt architecto minima
+          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
+          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
+          vitae! Porro nemo, atque aspernatur ea esse.
+        </div>
       </div>
+
       <Typography className={classes.subheadline} variant="h3" component="h3">
         <strong>Campaigns</strong>
       </Typography>
+
       <div className={classes.infoContainer}>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={7} sm={7} md={7} lg={7}>
-            {" "}
-            <img src={campaigns} alt="" style={{ borderRadius: "10px" }} />
-          </Grid>
-          <Grid item xs={5} sm={5} md={5} lg={5}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-            harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-            magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-            voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-            provident ut reprehenderit est quas harum doloribus ullam explicabo
-            ex! Explicabo provident natus omnis atque sunt architecto minima
-            veritatis nam expedita officiis voluptatum fugiat eos saepe,
-            assumenda excepturi fugit molestias? Fuga accusantium harum
-            doloremque eligendi vitae! Porro nemo, atque aspernatur ea esse, cum
-            placeat enim dolor numquam beatae accusamus rem fugit aut delectus
-            explicabo quidem, saepe optio praesentium adipisci repellat amet
-            magnam. Veritatis, ipsa?
-          </Grid>
-        </Grid>
+        <div>
+          {" "}
+          <img
+            src={campaigns}
+            alt=""
+            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+          />
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
+          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
+          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
+          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
+          provident ut reprehenderit est quas harum doloribus ullam explicabo
+          ex! Explicabo provident natus omnis atque sunt architecto minima
+          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
+          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
+          vitae! Porro nemo, atque aspernatur ea esse.
+        </div>
       </div>
+
       <Typography className={classes.subheadline} variant="h3" component="h3">
         <strong>Management & Analytics</strong>
       </Typography>
+
       <div className={classes.infoContainer}>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={7} sm={7} md={7} lg={7}>
-            {" "}
-            <img src={analytics} alt="" style={{ borderRadius: "10px" }} />
-          </Grid>
-          <Grid item xs={5} sm={5} md={5} lg={5}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-            harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-            magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-            voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-            provident ut reprehenderit est quas harum doloribus ullam explicabo
-            ex! Explicabo provident natus omnis atque sunt architecto minima
-            veritatis nam expedita officiis voluptatum fugiat eos saepe,
-            assumenda excepturi fugit molestias? Fuga accusantium harum
-            doloremque eligendi vitae! Porro nemo, atque aspernatur ea esse, cum
-            placeat enim dolor numquam beatae accusamus rem fugit aut delectus
-            explicabo quidem, saepe optio praesentium adipisci repellat amet
-            magnam. Veritatis, ipsa?
-          </Grid>
-        </Grid>
+        <div>
+          {" "}
+          <img
+            src={analytics}
+            alt=""
+            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+          />
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
+          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
+          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
+          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
+          provident ut reprehenderit est quas harum doloribus ullam explicabo
+          ex! Explicabo provident natus omnis atque sunt architecto minima
+          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
+          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
+          vitae! Porro nemo, atque aspernatur ea esse.
+        </div>
       </div>
 
       <Typography className={classes.subheadline} variant="h3" component="h3">
         <strong>QR Codes</strong>
       </Typography>
+
       <div className={classes.infoContainer}>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={7} sm={7} md={7} lg={7}>
-            {" "}
-            <img src={qrcodes} alt="" style={{ borderRadius: "10px" }} />
-          </Grid>
-          <Grid item xs={5} sm={5} md={5} lg={5}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-            harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-            magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-            voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-            provident ut reprehenderit est quas harum doloribus ullam explicabo
-            ex! Explicabo provident natus omnis atque sunt architecto minima
-            veritatis nam expedita officiis voluptatum fugiat eos saepe,
-            assumenda excepturi fugit molestias? Fuga accusantium harum
-            doloremque eligendi vitae! Porro nemo, atque aspernatur ea esse, cum
-            placeat enim dolor numquam beatae accusamus rem fugit aut delectus
-            explicabo quidem, saepe optio praesentium adipisci repellat amet
-            magnam. Veritatis, ipsa?
-          </Grid>
-        </Grid>
+        <div>
+          {" "}
+          <img
+            src={qrcodes}
+            alt=""
+            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+          />
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
+          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
+          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
+          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
+          provident ut reprehenderit est quas harum doloribus ullam explicabo
+          ex! Explicabo provident natus omnis atque sunt architecto minima
+          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
+          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
+          vitae! Porro nemo, atque aspernatur ea esse.
+        </div>
       </div>
+      
 
       <Footer />
     </Container>
