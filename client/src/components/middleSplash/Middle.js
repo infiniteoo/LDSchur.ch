@@ -28,11 +28,6 @@ const useStyles = makeStyles({
     borderRadius: "10px",
     padding: "50px",
   },
-  spanicon: {
-    "& svg": {
-      fontSize: "100",
-    },
-  },
 
   icons: {
     textAlign: "center",
@@ -46,7 +41,14 @@ const useStyles = makeStyles({
       gridTemplateColumns: "repeat(1, 1fr)",
     },
   },
+  style: {
+    fontSize: "15px",
+  },
 });
+
+const style = {
+  fontSize: "75px",
+};
 
 export default function Middle() {
   const classes = useStyles();
@@ -67,7 +69,7 @@ export default function Middle() {
         <div>
           <div className={classes.icons}>
             <span className={classes.spanicon}>
-              <HealthAndSafetyIcon style={{ fontSize: "75px" }} />
+              <HealthAndSafetyIcon style={style} />
             </span>
           </div>
           <h2>Inspire Trust</h2>
@@ -81,7 +83,7 @@ export default function Middle() {
         </div>
         <div>
           <div className={classes.icons}>
-            <ShowChartIcon style={{ fontSize: "75px" }} />
+            <ShowChartIcon style={style} />
           </div>
           <h2>Boost Results</h2>
           <p style={{ fontSize: "1.25rem" }}>
@@ -94,7 +96,7 @@ export default function Middle() {
         </div>
         <div>
           <div className={classes.icons}>
-            <ControlCameraIcon style={{ fontSize: "75px" }} />
+            <ControlCameraIcon style={style} />
           </div>
           <h2>Gain control</h2>
           <p style={{ fontSize: "1.25rem" }}>

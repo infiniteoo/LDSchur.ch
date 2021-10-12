@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import FAQ from "../middleSplash/FAQ";
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
@@ -23,6 +23,9 @@ const useStyles = makeStyles({
 });
 
 const Search = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const classes = useStyles();
   const [urlToConvert, setUrlToConvert] = useState("");
   const [shortURL, setShortURL] = useState("");

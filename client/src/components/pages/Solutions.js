@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { makeStyles } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
 import { Grid } from "@material-ui/core";
@@ -55,6 +55,9 @@ const useStyles = makeStyles({
 });
 
 export default function Solutions() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const classes = useStyles();
   return (
     <Container>
