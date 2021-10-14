@@ -123,20 +123,14 @@ export default function Why() {
           />
         </div>
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
+          Coming soon! We're working on a full-featured API that will allow
+          developers to connect to our system on the back-end to create links
+          and shorten them.
         </div>
       </div>
 
       <Typography className={classes.subheadline} variant="h3" component="h3">
-        <strong>Enterprise Class</strong>
+        <strong>Safe Link Technology</strong>
       </Typography>
 
       <div className={classes.infoContainer}>
@@ -149,15 +143,11 @@ export default function Why() {
           />
         </div>
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
+          Other URL shorteners are not safe. They will literally let you share
+          any link from any website. This means someone could send you
+          pornography, or blasphemous material, or violent content without you
+          even knowing it. Not with us! Our SafeLink integrated filter
+          technology prevents people from sharing links from nefarious websites.
         </div>
       </div>
 
@@ -175,15 +165,8 @@ export default function Why() {
           />
         </div>
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
+          Our services are completely free! We're not going to charge you for
+          shortening a link. Jeez.
         </div>
       </div>
 
