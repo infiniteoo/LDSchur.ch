@@ -97,15 +97,15 @@ export default function Why() {
           />
         </div>
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
+          Most URL links are long, confusing and cumbersome. As a result, people
+          are reluctant to click them. Plus, have you tried sharing a long
+          Facebook link on Twitter? You're lucky if you have enough characters
+          to post it! That's where a URL shortner comes in. We'll take that
+          ginormous link and make it into a teeny-tiny link that's easy to
+          share. Our computer wizards behind the scenes work their magic to
+          shorten your link, and store it in our database, and give you a unique
+          URL that you can share with your friends. We'll even track how many
+          times your link has been clicked, and how many people have shared it.
         </div>
       </div>
 
