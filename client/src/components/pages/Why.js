@@ -21,9 +21,10 @@ const useStyles = makeStyles({
       display: "block",
     },
   },
+
   img: {
     borderRadius: "50%",
-    width: "500px",
+    height: "64%",
     background: "linear-gradient(145deg, #d0c26b, #f7e67f)",
     boxShadow: "12px 12px 40px #b0a35a, -12px -12px 40px #fff",
   },
@@ -51,6 +52,8 @@ const useStyles = makeStyles({
     border: "4px dotted lightgrey",
     padding: "20px",
     marginTop: "10px",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
   },
   img2: {
     display: "flex",
@@ -58,6 +61,21 @@ const useStyles = makeStyles({
     justifyContent: "center",
     margin: "auto",
     maxWidth: "640px",
+  },
+  textBox: {
+    width: "100%",
+    padding: "20px",
+    paddingLeft: "10px",
+    lineHeight: "1.6",
+    textAlign: "justify",
+  },
+  "@media (max-width: 1080px)": {
+    infoContainer: {
+      display: "block",
+    },
+    img3: {
+      width: "100%",
+    },
   },
 });
 
@@ -88,24 +106,20 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
-        <div className={classes.img2}>
-          {" "}
-          <img
-            src={classroom}
-            alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
-          />
-        </div>
-        <div>
+        <img
+          src={classroom}
+          alt=""
+          style={{ borderRadius: "10px", height: "auto" }}
+          className={classes.img3}
+        />
+
+        <div className={classes.textBox}>
           Most URL links are long, confusing and cumbersome. As a result, people
           are reluctant to click them. Plus, have you tried sharing a long
           Facebook link on Twitter? You're lucky if you have enough characters
           to post it! That's where a URL shortner comes in. We'll take that
           ginormous link and make it into a teeny-tiny link that's easy to
-          share. Our computer wizards behind the scenes work their magic to
-          shorten your link, and store it in our database, and give you a unique
-          URL that you can share with your friends. We'll even track how many
-          times your link has been clicked, and how many people have shared it.
+          share.
         </div>
       </div>
 
@@ -114,10 +128,24 @@ export default function Why() {
       </Typography>
 
       <div className={classes.infoContainer}>
+        <Grid container justifyContent="center" alignItems="center">
+          <Grid item xs={7} sm={7} md={7} lg={7}>
+            {" "}
+            <img src={classroom} alt="" style={{ borderRadius: "10px" }} />
+          </Grid>
+          <Grid item xs={5} sm={5} md={5} lg={5}>
+            Most URL links are long, confusing and cumbersome. As a result,
+            people are reluctant to click them. Plus, have you tried sharing a
+            long Facebook link on Twitter? You're lucky if you have enough
+            characters to post it! That's where a URL shortner comes in. We'll
+            take that ginormous link and make it into a teeny-tiny link that's
+            easy to share.
+          </Grid>
+        </Grid>
+
         <div className={classes.img2}>
           {" "}
           <img
-            src={programming}
             alt=""
             style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
           />
