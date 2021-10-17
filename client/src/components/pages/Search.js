@@ -15,9 +15,19 @@ const useStyles = makeStyles({
     display: "flex",
     marginBottom: "50px",
   },
+  "@media (max-width: 993px)": {
+    jumbotron: {
+      "& img": {
+        height: "180px",
+      },
+    },
+  },
   "@media (max-width: 780px)": {
     jumbotron: {
       display: "block",
+      "& img": {
+        height: "auto",
+      },
     },
   },
 });
