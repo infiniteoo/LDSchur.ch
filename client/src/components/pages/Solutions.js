@@ -3,10 +3,10 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import jesusPortrait from "../../imgs/baby_jesus.jpg";
 import Footer from "../footer/Footer";
-import socialmedia from "../../imgs/socialmedia.jpg";
-import fordevelopers from "../../imgs/fordevelopers.jpg";
-import customerservice from "../../imgs/customerservice.jpg";
-import digitalmarketing from "../../imgs/digitalmarketing.jpg";
+import socialmedia from "../../imgs/socialmedia.png";
+import fordevelopers from "../../imgs/fordevelopers.png";
+import customerservice from "../../imgs/customerservice.png";
+import digitalmarketing from "../../imgs/digitalmarketing.png";
 import "./pages.css";
 
 export default function Why() {
