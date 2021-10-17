@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Georama", sans-serif;
-  font-size: 1.3rem;
+  font-family: "Georama", sans-serif !important;
+  font-size: 1.3rem !important;
 }
 
 a {
@@ -21,12 +21,16 @@ a {
   padding: 0 2rem;
 }
 
+img {
+  width: 100%;
+}
+
 .card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  background: #fff;
-  margin-bottom: 2rem;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-gap: 2rem !important;
+  background: #fff !important;
+  margin-bottom: 2rem !important;
 }
 
 .card h3 {
@@ -47,6 +51,6 @@ a {
 
 @media (max-width: 700px) {
   .card {
-    display: block;
+    display: block !important;
   }
 }

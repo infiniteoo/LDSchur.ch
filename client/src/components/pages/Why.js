@@ -5,10 +5,10 @@ import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import jesusPortrait from "../../imgs/jesus_portrait.jpg";
 import Footer from "../footer/Footer";
-import classroom from "../../imgs/classroom.jpg";
-import programming from "../../imgs/programming.jpg";
-import pricing from "../../imgs/pricing.jpg";
-import enterprise from "../../imgs/enterprise.jpg";
+import classroom from "../../imgs/education.svg";
+import programming from "../../imgs/programming.svg";
+import pricing from "../../imgs/pricing.svg";
+import enterprise from "../../imgs/security.svg";
 import "./why.css";
 
 const useStyles = makeStyles({
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 
   img: {
     borderRadius: "50%",
-    height: "64%",
+    height: "50%",
     background: "linear-gradient(145deg, #d0c26b, #f7e67f)",
     boxShadow: "12px 12px 40px #b0a35a, -12px -12px 40px #fff",
   },
@@ -71,8 +71,8 @@ export default function Why() {
           </Grid>
         </Grid>
       </div>
-      <main className="container">
-        <section className="card">
+      <div class="container">
+        <section class="card">
           <img src={classroom} alt="" />
           <div>
             <h3>
@@ -227,7 +227,7 @@ export default function Why() {
           shortening a link. Jeez.
         </div>
       </div> */}
-      </main>
+      </div>
       <Footer />
     </Container>
   );
