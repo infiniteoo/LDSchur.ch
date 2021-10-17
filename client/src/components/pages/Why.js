@@ -30,12 +30,6 @@ const useStyles = makeStyles({
     },
   },
 
-  img: {
-    borderRadius: "50%",
-    height: "50%",
-    background: "linear-gradient(145deg, #d0c26b, #f7e67f)",
-    boxShadow: "12px 12px 40px #b0a35a, -12px -12px 40px #fff",
-  },
   headline: {
     fontFamily: ["Georama"],
     fontWeight: "100",
@@ -58,7 +52,7 @@ export default function Why() {
   return (
     <Container>
       <div className={classes.jumbotron}>
-        <img src={jesusPortrait} className={classes.img} alt="" />
+        <img src={jesusPortrait} className="titlepic" alt="" />
         <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Typography
@@ -71,8 +65,8 @@ export default function Why() {
           </Grid>
         </Grid>
       </div>
-      <div class="container">
-        <section class="card">
+      <div className="container">
+        <section className="card">
           <img src={classroom} alt="" />
           <div>
             <h3>
@@ -88,7 +82,7 @@ export default function Why() {
             </p>
           </div>
         </section>
-        <section class="card">
+        <section className="card">
           <img src={programming} alt="" />
           <div>
             <h3>
@@ -101,7 +95,7 @@ export default function Why() {
             </p>
           </div>
         </section>
-        <section class="card">
+        <section className="card">
           <img src={enterprise} alt="" />
           <div>
             <h3>
@@ -117,7 +111,7 @@ export default function Why() {
             </p>
           </div>
         </section>
-        <section class="card">
+        <section className="card">
           <img src={pricing} alt="" />
           <div>
             <h3>
