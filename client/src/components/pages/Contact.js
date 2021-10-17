@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import contactus from "../../imgs/contactus.svg";
+import Footer from "../footer/Footer";
 import "./pages.css";
 
 const Contacts = () => {
@@ -55,7 +56,7 @@ const Contacts = () => {
             component="h2"
             style={{ fontFamily: ["Georama", "sans-serif"] }}
           >
-            Contact Us
+            Contact
           </Typography>
         </div>
         <div id="contacts" className="contacts">
@@ -64,15 +65,15 @@ const Contacts = () => {
               <strong>We Want to Hear From You!</strong>
             </h1>
             <p>
-              Please fill out the form and describe you project needs and I'll
-              contact you as soon as possible.
+              Please fill out the form and our team will get back to you as soon
+              as possible.
             </p>
             <span className="success-message">{successMessage}</span>
           </div>
           <div className="container">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="row">
-                <div className="col-md-6 col-xs-12">
+                <div className="col-md-12 col-xs-12">
                   {/* NAME INPUT */}
                   <div className="text-center">
                     <input
@@ -146,29 +147,23 @@ const Contacts = () => {
                   <span className="error-message">
                     {errors.subject && errors.subject.message}
                   </span>
-                </div>
-                <div className="col-md-6 col-xs-12">
-                  {/* DESCRIPTION */}
-                  <div className="text-center">
-                    <textarea
-                      type="text"
-                      className="form-control"
-                      placeholder="Please describe shortly you project..."
-                      name="description"
-                      ref={register({
-                        required:
-                          "Please describe shortly your project needs...",
-                      })}
-                    ></textarea>
-                    <div className="line"></div>
-                  </div>
+                  <textarea
+                    type="text"
+                    className="form-control"
+                    placeholder="How can we help you?"
+                    name="description"
+                    ref={register({
+                      required: "Please describe shortly your project needs...",
+                    })}
+                  ></textarea>
                   <span className="error-message">
                     {errors.description && errors.description.message}
                   </span>
                 </div>
+                <div className="col-md-6 col-xs-12">{/* DESCRIPTION */}</div>
 
                 <button
-                  className="btn-main-offer contact-btn btn-lg btn-dark"
+                  className="btn-main-offer contact-btn btn-lg btn-dark mt-5"
                   type="submit"
                 >
                   Submit
@@ -178,6 +173,7 @@ const Contacts = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </Container>
   );
 };
