@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import { makeStyles } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import jesusPortrait from "../../imgs/jesus_portrait.jpg";
@@ -8,7 +7,7 @@ import classroom from "../../imgs/education.svg";
 import programming from "../../imgs/programming.svg";
 import pricing from "../../imgs/pricing.svg";
 import enterprise from "../../imgs/security.svg";
-import "./why.css";
+import "./pages.css";
 
 export default function Why() {
   useLayoutEffect(() => {

@@ -1,246 +1,118 @@
 import React, { useLayoutEffect } from "react";
-import { makeStyles } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
-import { Grid } from "@material-ui/core";
-import { Typography } from "@material-ui/core";
-import jesusPortrait from "../../imgs/baby_bible.jpg";
+import Typography from "@material-ui/core/Typography";
+import jesusPortrait from "../../imgs/jesus_portrait.jpg";
 import Footer from "../footer/Footer";
-import analytics from "../../imgs/analytics.jpg";
-import brandedlinks from "../../imgs/brandedlinks.jpg";
-import campaigns from "../../imgs/campaigns.jpg";
-import linkmanagement from "../../imgs/linkmanagement.jpg";
-import mobilelinks from "../../imgs/mobilelinks.jpg";
-import qrcodes from "../../imgs/qrcodes.jpg";
+import analytics from "../../imgs/analytics.svg";
+import brandedlinks from "../../imgs/brandedlinks.svg";
+import campaigns from "../../imgs/campaigns.svg";
+import linkmanagement from "../../imgs/linkmanagement.svg";
+import mobilelinks from "../../imgs/mobilelinks.svg";
+import qrcodes from "../../imgs/qrcodes.svg";
 
-const useStyles = makeStyles({
-  jumbotron: {
-    marginTop: "6rem",
-    display: "flex",
-    marginBottom: "50px",
-  },
-  "@media (max-width: 780px)": {
-    jumbotron: {
-      display: "block",
-    },
-  },
-  img: {
-    borderRadius: "50%",
-    width: "500px",
-    background: "linear-gradient(145deg, #d0c26b, #f7e67f)",
-    boxShadow: "12px 12px 40px #b0a35a, -12px -12px 40px #fff",
-  },
-  headline: {
-    fontFamily: ["Georama"],
-    fontWeight: "100",
-    color: "white",
-    textShadow: "2px 2px 4px #000000",
-    backgroundColor: "#E7D777",
-    textAlign: "center",
+import "./pages.css";
 
-    marginLeft: "60px",
-    background:
-      "linear-gradient(120deg, rgba(255,255,255,1) 11%, rgba(231,215,119,1) 64%, rgba(255,255,255,1) 88%)",
-  },
-  subheadline: {
-    fontFamily: ["Georama"],
-    marginTop: "20px",
-
-    textAlign: "center",
-  },
-  infoContainer: {
-    fontSize: "1.5rem",
-    fontFamily: ["Georama"],
-    border: "4px dotted lightgrey",
-    padding: "20px",
-    marginTop: "10px",
-  },
-  img2: {
-    display: "flex",
-    alignContent: "center",
-    justifyContent: "center",
-    margin: "auto",
-    maxWidth: "640px",
-  },
-});
-
-export default function Features() {
+export default function Why() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-  const classes = useStyles();
+
   return (
     <Container>
-      <div className={classes.jumbotron}>
-        <img src={jesusPortrait} className={classes.img} alt="" />
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid item xs={12} sm={12} md={12} lg={12}>
-            <Typography
-              className={classes.headline}
-              variant="h1"
-              component="h2"
-            >
-              Features
-            </Typography>
-          </Grid>
-        </Grid>
-      </div>
-
-      <Typography className={classes.subheadline} variant="h3" component="h3">
-        <strong>Link Management</strong>
-      </Typography>
-
-      <div className={classes.infoContainer}>
-        <div className={classes.img2}>
-          {" "}
+      <div className="container">
+        <div className="jumbotron">
           <img
-            src={linkmanagement}
-            alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
+            src={jesusPortrait}
+            className="titlepic"
+            alt="portrait of jesus"
           />
+          <Typography
+            className="headline"
+            variant="h1"
+            component="h2"
+            style={{ fontFamily: ["Georama", "sans-serif"] }}
+          >
+            Features
+          </Typography>
         </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
-        </div>
+        <section className="card">
+          <img src={linkmanagement} alt="" />
+          <div>
+            <h3>
+              <strong>Link Management</strong>
+            </h3>
+            <p>
+              Most URL links are long, confusing and cumbersome. As a result,
+              people are reluctant to click them. We'll take that ginormous link
+              and make it into a teeny-tiny link that's easy to share.
+            </p>
+          </div>
+        </section>
+        <section className="card">
+          <img src={brandedlinks} alt="" />
+          <div>
+            <h3>
+              <strong>Branded Links</strong>
+            </h3>
+            <p>
+              Coming soon! We're working on a full-featured API that will allow
+              developers to connect to our system on the back-end to create
+              links and shorten them.
+            </p>
+          </div>
+        </section>
+        <section className="card">
+          <img src={mobilelinks} alt="" />
+          <div>
+            <h3>
+              <strong>Mobile Links</strong>
+            </h3>
+            <p>
+              Other URL shorteners are not safe. They will let you share any
+              link from anywhere. This means someone could send you harmful
+              content without you even knowing it. Not with us! Our SafeLink
+              integrated filter technology prevents people from sharing
+              nefarious links.
+            </p>
+          </div>
+        </section>
+        <section className="card">
+          <img src={campaigns} alt="" />
+          <div>
+            <h3>
+              <strong>Campaigns</strong>
+            </h3>
+            <p>
+              Our services are completely free! We're not going to charge you
+              for shortening a link. Jeez.
+            </p>
+          </div>
+        </section>
+        <section className="card">
+          <img src={analytics} alt="" />
+          <div>
+            <h3>
+              <strong>Management & Analytics</strong>
+            </h3>
+            <p>
+              Our services are completely free! We're not going to charge you
+              for shortening a link. Jeez.
+            </p>
+          </div>
+        </section>
+        <section className="card">
+          <img src={qrcodes} alt="" />
+          <div>
+            <h3>
+              <strong>QR Codes</strong>
+            </h3>
+            <p>
+              Our services are completely free! We're not going to charge you
+              for shortening a link. Jeez.
+            </p>
+          </div>
+        </section>
       </div>
-
-      <Typography className={classes.subheadline} variant="h3" component="h3">
-        <strong>Branded Links</strong>
-      </Typography>
-
-      <div className={classes.infoContainer}>
-        <div className={classes.img2}>
-          {" "}
-          <img
-            src={brandedlinks}
-            alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
-          />
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
-        </div>
-      </div>
-
-      <Typography className={classes.subheadline} variant="h3" component="h3">
-        <strong>Mobile Links</strong>
-      </Typography>
-
-      <div className={classes.infoContainer}>
-        <div className={classes.img2}>
-          {" "}
-          <img
-            src={mobilelinks}
-            alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
-          />
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
-        </div>
-      </div>
-
-      <Typography className={classes.subheadline} variant="h3" component="h3">
-        <strong>Campaigns</strong>
-      </Typography>
-
-      <div className={classes.infoContainer}>
-        <div className={classes.img2}>
-          {" "}
-          <img
-            src={campaigns}
-            alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
-          />
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
-        </div>
-      </div>
-
-      <Typography className={classes.subheadline} variant="h3" component="h3">
-        <strong>Management & Analytics</strong>
-      </Typography>
-
-      <div className={classes.infoContainer}>
-        <div className={classes.img2}>
-          {" "}
-          <img
-            src={analytics}
-            alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
-          />
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
-        </div>
-      </div>
-
-      <Typography className={classes.subheadline} variant="h3" component="h3">
-        <strong>QR Codes</strong>
-      </Typography>
-
-      <div className={classes.infoContainer}>
-        <div className={classes.img2}>
-          {" "}
-          <img
-            src={qrcodes}
-            alt=""
-            style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
-          />
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab
-          harum itaque nisi eligendi omnis pariatur qui nobis, tenetur sit
-          magnam aliquam quaerat beatae iste libero sequi repudiandae porro
-          voluptas architecto commodi dicta debitis! Reiciendis voluptatum
-          provident ut reprehenderit est quas harum doloribus ullam explicabo
-          ex! Explicabo provident natus omnis atque sunt architecto minima
-          veritatis nam expedita officiis voluptatum fugiat eos saepe, assumenda
-          excepturi fugit molestias? Fuga accusantium harum doloremque eligendi
-          vitae! Porro nemo, atque aspernatur ea esse.
-        </div>
-      </div>
-
       <Footer />
     </Container>
   );
