@@ -18,6 +18,9 @@ const useStyles = makeStyles({
   link: {
     color: "white",
     textDecoration: "none",
+    "&:hover": {
+      color: "#E7D777",
+    },
   },
 
   footerLists: {
