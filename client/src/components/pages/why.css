@@ -17,7 +17,41 @@ a {
   max-width: 1100px;
   margin: auto;
   overflow: auto;
+
   padding: 0 2rem;
+}
+
+.headline {
+  font-family: "Georama" !important;
+  font-weight: 100;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #e7d777;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100px;
+  margin-left: 25px !important;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 1) 11%,
+    rgba(231, 215, 119, 1) 64%,
+    rgba(255, 255, 255, 1) 88%
+  );
+  width: 100%;
+  margin-top: 150px !important;
+}
+
+.jumbotron {
+  margin-top: 6rem !important;
+  display: flex !important;
+  margin-bottom: 50px !important;
+}
+
+.titlepic {
+  width: 45% !important;
+  border-radius: 50% !important;
+  box-shadow: 6px 6px 20px #b0a35a, -12px -12px 40px #fff !important;
 }
 
 .card {
@@ -26,6 +60,7 @@ a {
   grid-gap: 2rem !important;
   background: #fff !important;
   margin-bottom: 2rem !important;
+  padding: 20px;
 }
 
 .card p {
@@ -49,13 +84,26 @@ a {
   order: 2;
 }
 
-.titlepic {
-  border-radius: "50%" !important;
-  box-shadow: "6px 6px 20px #b0a35a, -12px -12px 40px #fff" !important;
-}
-
 @media (max-width: 700px) {
   .card {
     display: block !important;
+  }
+  .headline {
+    margin-top: 50px !important;
+    font-size: 75px !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .jumbotron {
+    display: block !important;
+  }
+  .titlepic {
+    width: 75% !important;
+  }
+  .headline {
+    margin-top: 50px !important;
+    font-size: 75px !important;
+    margin-left: 0 !important;
   }
 }
