@@ -6,7 +6,6 @@
 
 body {
   font-family: "Georama", sans-serif !important;
-  font-size: 1.3rem !important;
 }
 
 a {
@@ -31,6 +30,10 @@ img {
   grid-gap: 2rem !important;
   background: #fff !important;
   margin-bottom: 2rem !important;
+}
+
+.card p {
+  font-size: 1.3rem !important;
 }
 
 .card h3 {
