@@ -3,10 +3,10 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import jesusPortrait from "../../imgs/jesus_b&w.jpg";
 import Footer from "../footer/Footer";
-import blog from "../../imgs/blog.jpg";
-import developer from "../../imgs/developer.jpg";
-import library from "../../imgs/library.jpg";
-import support from "../../imgs/support.jpg";
+import blog from "../../imgs/blog.png";
+import developer from "../../imgs/developer.png";
+import library from "../../imgs/library.png";
+import support from "../../imgs/support.png";
 
 import "./pages.css";
 
