@@ -42,7 +42,7 @@ function FAQ() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ fontFamily: "Georama", fontWeight: "bold" }}>
             A URL shortener, also known as a link shortener, works by
             transforming any long URL into a shorter, more readable link. When a
             user clicks the shortened version, they’re automatically forwarded
@@ -61,7 +61,7 @@ function FAQ() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ fontFamily: "Georama", fontWeight: "bold" }}>
             Extremely long website URLs can be confusing and intimidating to
             users. Plus, on social media platforms such as Twitter, you are
             limited to the amount of characters you can use. A short URL will
@@ -81,7 +81,7 @@ function FAQ() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ fontFamily: "Georama", fontWeight: "bold" }}>
             Other URL shortening services allow you to convert ANY long link
             into a short link. This means they could send you to a fake link, or
             a link unsuitable for a wholesome person's eyes, such as pornography
@@ -104,10 +104,10 @@ function FAQ() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ fontFamily: "Georama", fontWeight: "bold" }}>
             While the creators of this website are active, temple-recommended
             members of The Church of Jesus Christ of Latter-Day Saints, we are
-            not directly affiliated, endorsed or run by the church.
+            not directly affiliated, endorsed, or run by the church.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -122,7 +122,7 @@ function FAQ() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ fontFamily: "Georama", fontWeight: "bold" }}>
             We built this website to serve our Lord Jesus Christ and to help
             people find the best short links for their websites. We hope you
             enjoy using it, and we hope you will join us in our mission to
