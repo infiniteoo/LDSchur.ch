@@ -105,8 +105,7 @@ function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography style={{ fontFamily: "Georama", fontWeight: "bold" }}>
-            While the creators of this website are active, temple-recommended
-            members of The Church of Jesus Christ of Latter-Day Saints, we are
+            While the creators of this website are active members of The Church of Jesus Christ of Latter-Day Saints, we are
             not directly affiliated, endorsed, or run by the church.
           </Typography>
         </AccordionDetails>

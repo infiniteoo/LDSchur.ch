@@ -1,71 +1,82 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import "../style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import logo from "../../imgs/lds.png";
-const useStyles = makeStyles({
-  root: {
-    fontFamily: ["Georama"],
-    backgroundColor: "#000",
-    width: "100%",
-    justifyContent: "flex-end",
-    padding: "10px",
-    marginTop: "10px",
-    marginRight: "50px",
-    fontSize: "30px",
-    display: "flex",
-    color: "#E7D777",
-  },
-  link: {
-    color: "#E7D777",
-    textDecoration: "none",
-    marginLeft: "50px",
-    "&:hover": {
-      fontWeight: "bold",
-    },
-  },
 
-  img: {
-    height: "55px",
-    border: "2px solid white",
-    clipPath: "ellipse(25% 40% at 50% 50%)",
-    margin: "5px",
-    backgroundColor: "black",
-  },
-  navHolder: {
-    display: "flex",
-    justifyContent: "space-between",
-    backgroundColor: "#000",
-    position: "fixed",
-    top: "0",
-    width: "100vw",
-    marginBottom: "1rem",
-    zIndex: "100",
-  },
-});
+function NavBar() {
+  const [expand, updateExpanded] = useState(false);
+  const [navColour] = useState(true);
 
-const Navbar = () => {
-  const classes = useStyles();
   return (
-    <div className={classes.navHolder}>
-      <Link to="/home">
-        <img src={logo} alt="" className={classes.img} />
-      </Link>
-      <div className={classes.root}>
-        <Link to="/why" className={classes.link}>
-          Why?
-        </Link>
-        <Link to="/solutions" className={classes.link}>
-          Solutions
-        </Link>
-        <Link to="/features" className={classes.link}>
-          Features
-        </Link>
-        <Link to="/resources" className={classes.link}>
-          Resources
-        </Link>
-      </div>
-    </div>
+    <Navbar
+      expanded={expand}
+      fixed="top"
+      expand="md"
+      className={navColour ? "sticky" : "navbar"}
+    >
+      <Container>
+        <Navbar.Brand href="/"></Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <i className="fas fa-home"></i> Home
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/why"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="far fa-user"></i> Why?
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resources"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="fab fa-codepen"></i> Resources
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/features"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="fab fa-codepen"></i> Features
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/solutions"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="fab fa-codepen"></i> Solutions
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
+}
 
-export default Navbar;
+export default NavBar;

@@ -42,9 +42,11 @@ export default function Why() {
               <strong>Link Management</strong>
             </h3>
             <p>
-              Most URL links are long, confusing and cumbersome. As a result,
-              people are reluctant to click them. We'll take that ginormous link
-              and make it into a teeny-tiny link that's easy to share.
+              We store our links in a cloud-based, No-SQL MongoDB database, that
+              is secure and confidential for all users. Our Node.js/Express
+              server is hosted by <a href="http://linode.com">Linode</a>, and
+              our front end interface was created with JavaScript framework
+              React (created and maintained by Facebook).
             </p>
           </div>
         </section>
@@ -55,9 +57,9 @@ export default function Why() {
               <strong>Branded Links</strong>
             </h3>
             <p>
-              Coming soon! We're working on a full-featured API that will allow
-              developers to connect to our system on the back-end to create
-              links and shorten them.
+              Our certified, branded links guarantee that your links will be
+              safe and wholesome. When you see receive a shared link that starts
+              with <strong>"https://LDSchur.ch/"</strong>, you know it's legit!
             </p>
           </div>
         </section>
@@ -68,11 +70,9 @@ export default function Why() {
               <strong>Mobile Links</strong>
             </h3>
             <p>
-              Other URL shorteners are not safe. They will let you share any
-              link from anywhere. This means someone could send you harmful
-              content without you even knowing it. Not with us! Our SafeLink
-              integrated filter technology prevents people from sharing
-              nefarious links.
+              Our website is mobile-friendly, and designed with the latest
+              responsive web technologies to ensure it looks good on any device
+              it's view on, whether it's a smartphone, tablet, or desktop.
             </p>
           </div>
         </section>
@@ -83,8 +83,9 @@ export default function Why() {
               <strong>Campaigns</strong>
             </h3>
             <p>
-              Our services are completely free! We're not going to charge you
-              for shortening a link. Jeez.
+              Let us help you create a campaign to share your links with your
+              custom branded links. We're open for business and eager to help
+              your brand grow. Contact us today!
             </p>
           </div>
         </section>
@@ -95,8 +96,11 @@ export default function Why() {
               <strong>Management & Analytics</strong>
             </h3>
             <p>
-              Our services are completely free! We're not going to charge you
-              for shortening a link. Jeez.
+              We are tracking and analyzing your links to help you make the most
+              of your click-through. Our bean-counters are hard at work creating
+              fancy spreadsheets and graphs to determine how your links are
+              performing and developing the best strategies to expand your
+              brand!
             </p>
           </div>
         </section>
@@ -107,8 +111,8 @@ export default function Why() {
               <strong>QR Codes</strong>
             </h3>
             <p>
-              Our services are completely free! We're not going to charge you
-              for shortening a link. Jeez.
+              Coming soon! We plan on creating custom QR codes for your links.
+              We are working on it!
             </p>
           </div>
         </section>
