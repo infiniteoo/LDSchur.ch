@@ -9,6 +9,7 @@ import classroom from "../../imgs/classroom.jpg";
 import programming from "../../imgs/programming.jpg";
 import pricing from "../../imgs/pricing.jpg";
 import enterprise from "../../imgs/enterprise.jpg";
+import "./why.css";
 
 const useStyles = makeStyles({
   jumbotron: {
@@ -19,6 +20,13 @@ const useStyles = makeStyles({
   "@media (max-width: 780px)": {
     jumbotron: {
       display: "block",
+    },
+    img: {
+      width: "90%",
+      marginBottom: "20px",
+    },
+    headline: {
+      fontSize: "2.5rem",
     },
   },
 
@@ -39,43 +47,6 @@ const useStyles = makeStyles({
     marginLeft: "60px",
     background:
       "linear-gradient(120deg, rgba(255,255,255,1) 11%, rgba(231,215,119,1) 64%, rgba(255,255,255,1) 88%)",
-  },
-  subheadline: {
-    fontFamily: ["Georama"],
-    marginTop: "20px",
-
-    textAlign: "center",
-  },
-  infoContainer: {
-    fontSize: "1.5rem",
-    fontFamily: ["Georama"],
-    border: "4px dotted lightgrey",
-    padding: "20px",
-    marginTop: "10px",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-  },
-  img2: {
-    display: "flex",
-    alignContent: "center",
-    justifyContent: "center",
-    margin: "auto",
-    maxWidth: "640px",
-  },
-  textBox: {
-    width: "100%",
-    padding: "20px",
-    paddingLeft: "10px",
-    lineHeight: "1.6",
-    textAlign: "justify",
-  },
-  "@media (max-width: 1080px)": {
-    infoContainer: {
-      display: "block",
-    },
-    img3: {
-      width: "100%",
-    },
   },
 });
 
@@ -100,8 +71,66 @@ export default function Why() {
           </Grid>
         </Grid>
       </div>
+      <main className="container">
+        <section className="card">
+          <img src={classroom} alt="" />
+          <div>
+            <h3>
+              <strong>URL Shortening 101</strong>
+            </h3>
+            <p>
+              Most URL links are long, confusing and cumbersome. As a result,
+              people are reluctant to click them. Plus, have you tried sharing a
+              long Facebook link on Twitter? You're lucky if you have enough
+              characters to post it! That's where a URL shortner comes in. We'll
+              take that ginormous link and make it into a teeny-tiny link that's
+              easy to share.
+            </p>
+          </div>
+        </section>
+        <section class="card">
+          <img src={programming} alt="" />
+          <div>
+            <h3>
+              <strong>Integration & API</strong>
+            </h3>
+            <p>
+              Coming soon! We're working on a full-featured API that will allow
+              developers to connect to our system on the back-end to create
+              links and shorten them.
+            </p>
+          </div>
+        </section>
+        <section class="card">
+          <img src={enterprise} alt="" />
+          <div>
+            <h3>
+              <strong>Safe Link Technology</strong>
+            </h3>
+            <p>
+              Other URL shorteners are not safe. They will literally let you
+              share any link from any website. This means someone could send you
+              pornography, or blasphemous material, or violent content without
+              you even knowing it. Not with us! Our SafeLink integrated filter
+              technology prevents people from sharing links from nefarious
+              websites.
+            </p>
+          </div>
+        </section>
+        <section class="card">
+          <img src={pricing} alt="" />
+          <div>
+            <h3>
+              <strong>Pricing</strong>
+            </h3>
+            <p>
+              Our services are completely free! We're not going to charge you
+              for shortening a link. Jeez.
+            </p>
+          </div>
+        </section>
 
-      <Typography className={classes.subheadline} variant="h3" component="h3">
+        {/* <Typography className={classes.subheadline} variant="h3" component="h3">
         <strong>URL Shortening 101</strong>
       </Typography>
 
@@ -146,6 +175,7 @@ export default function Why() {
         <div className={classes.img2}>
           {" "}
           <img
+            src={programming}
             alt=""
             style={{ borderRadius: "10px", width: "100%", padding: "20px" }}
           />
@@ -196,8 +226,8 @@ export default function Why() {
           Our services are completely free! We're not going to charge you for
           shortening a link. Jeez.
         </div>
-      </div>
-
+      </div> */}
+      </main>
       <Footer />
     </Container>
   );
