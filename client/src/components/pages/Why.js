@@ -1,7 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import jesusPortrait from "../../imgs/jesus_portrait.jpg";
 import why from "../../imgs/why.svg";
 import Footer from "../footer/Footer";
 import classroom from "../../imgs/education.svg";
