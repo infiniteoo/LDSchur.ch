@@ -3,10 +3,10 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import jesusPortrait from "../../imgs/jesus_b&w.jpg";
 import Footer from "../footer/Footer";
-import blog from "../../imgs/blog.png";
-import developer from "../../imgs/developer.png";
+import love from "../../imgs/love.svg";
 import library from "../../imgs/library.png";
 import support from "../../imgs/support.png";
+import socialmedia from "../../imgs/socialmedia.png";
 
 import "./pages.css";
 
@@ -34,15 +34,15 @@ export default function Why() {
           </Typography>
         </div>
         <section className="card">
-          <img src={blog} alt="" />
+          <img src={socialmedia} alt="" />
           <div>
             <h3>
-              <strong>Blog</strong>
+              <strong>Social Media</strong>
             </h3>
             <p>
-              Most URL links are long, confusing and cumbersome. As a result,
-              people are reluctant to click them. We'll take that ginormous link
-              and make it into a teeny-tiny link that's easy to share.
+              Coming soon! Our blog and social media accounts are being set up
+              to market our awesome new app and backend technologies. Check back
+              soon for all the links, updates and deets!
             </p>
           </div>
         </section>
@@ -53,24 +53,40 @@ export default function Why() {
               <strong>Resource Library</strong>
             </h3>
             <p>
-              Coming soon! We're working on a full-featured API that will allow
-              developers to connect to our system on the back-end to create
-              links and shorten them.
+              Our website and SafeLink technology are completely open source and
+              available for cloning and forking on Github. To access the app's
+              source code{" "}
+              <a href="https://github.com/infiniteoo/LDSchur.ch">click here</a>.
+              <br />
+              <br />
+              Our SafeLink technology, which filters out any malicious links, is
+              available for free for use on any website. To access the SafeLink
+              technology{" "}
+              <a href="https://github.com/infiniteoo/NODEJS-unworthy_url_names">
+                click here
+              </a>
+              .
             </p>
           </div>
         </section>
         <section className="card">
-          <img src={developer} alt="" />
+          <img src={love} alt="" />
           <div>
             <h3>
-              <strong>Developers</strong>
+              <strong>Favorite Scripture</strong>
             </h3>
             <p>
-              Other URL shorteners are not safe. They will let you share any
-              link from anywhere. This means someone could send you harmful
-              content without you even knowing it. Not with us! Our SafeLink
-              integrated filter technology prevents people from sharing
-              nefarious links.
+              Helaman 3:29
+              <br />
+              <br />
+              <em>
+                Yea, we see that whosoever will may lay hold upon the word of
+                God, which is quick and powerful, which shall divide asunder all
+                the cunning and the snares and the wiles of the devil, and lead
+                the man of Christ in a strait and narrow course across that
+                everlasting gulf of misery which is prepared to engulf the
+                wicked.
+              </em>
             </p>
           </div>
         </section>
@@ -81,8 +97,15 @@ export default function Why() {
               <strong>Support</strong>
             </h3>
             <p>
-              Our services are completely free! We're not going to charge you
-              for shortening a link. Jeez.
+              LDSchur.ch is an Idaho-based company. We are not affiliated with
+              The Church of Latter-Day Saints, but we are Heavenly Father-loving
+              Saints who study The Book of Mormon daily, and who who have
+              received confirmation of the church's validity of and it's
+              restored gospel of Jesus Christ.
+              <br />
+              <br />
+              To contact us please use the contact form found{" "}
+              <a href="/contact">here</a>.
             </p>
           </div>
         </section>
