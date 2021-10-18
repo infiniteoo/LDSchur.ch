@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from "react";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import jesusPortrait from "../../imgs/jesus_portrait.jpg";
+import why from "../../imgs/why.svg";
 import Footer from "../footer/Footer";
 import classroom from "../../imgs/education.svg";
 import programming from "../../imgs/programming.svg";
@@ -18,11 +19,7 @@ export default function Why() {
     <Container>
       <div className="container">
         <div className="jumbotron">
-          <img
-            src={jesusPortrait}
-            className="titlepic"
-            alt="portrait of jesus"
-          />
+          <img src={why} className="titlepic" alt="portrait of jesus" />
           <Typography
             className="headline"
             variant="h1"
