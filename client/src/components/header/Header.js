@@ -15,6 +15,16 @@ const useStyles = makeStyles({
     fontWeight: "1900",
     textAlign: "center",
   },
+  "@media (max-width: 470px)": {
+    root: {
+      fontSize: "75px",
+    },
+  },
+  "@media (max-width: 370px)": {
+    root: {
+      fontSize: "50px",
+    },
+  },
 });
 
 const Header = () => {

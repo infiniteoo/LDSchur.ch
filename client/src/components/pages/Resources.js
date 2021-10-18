@@ -30,7 +30,7 @@ export default function Why() {
             component="h2"
             style={{ fontFamily: ["Georama", "sans-serif"] }}
           >
-            Features
+            Resources
           </Typography>
         </div>
         <section className="card">

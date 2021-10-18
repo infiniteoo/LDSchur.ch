@@ -1,4 +1,4 @@
-POST http://localhost:7777/api/url/shorten
+POST http://LDSchur.ch/api/url/shorten
 Content-Type: application/json
 
 {

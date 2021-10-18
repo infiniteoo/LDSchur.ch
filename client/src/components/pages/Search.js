@@ -30,6 +30,22 @@ const useStyles = makeStyles({
       },
     },
   },
+  "@media (max-width: 470px)": {
+    jumbotron: {
+      display: "block",
+      "& img": {
+        height: "200px",
+      },
+    },
+  },
+  "@media (max-width: 370px)": {
+    jumbotron: {
+      display: "block",
+      "& img": {
+        height: "150px",
+      },
+    },
+  },
 });
 
 const Search = () => {
