@@ -69,6 +69,15 @@ const useStyles = makeStyles({
       textAlign: "center",
     },
   },
+  "@media(max-width: 500px)": {
+    footerLists: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      flexDirection: "column",
+      justifyContent: "center",
+      textAlign: "center",
+    },
+  },
 });
 
 function Footer() {
