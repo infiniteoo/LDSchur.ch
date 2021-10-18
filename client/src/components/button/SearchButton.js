@@ -49,7 +49,7 @@ const SearchButton = (props) => {
 
     var config = {
       method: "post",
-      url: "http://localhost:7777/api/url/shorten",
+      url: "/api/url/shorten",
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Point": "*",
