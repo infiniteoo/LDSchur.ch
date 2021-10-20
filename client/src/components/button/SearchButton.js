@@ -24,6 +24,11 @@ const useStyles = makeStyles({
       width: "300px",
     },
   },
+  "@media(max-width: 300px)": {
+    root: {
+      width: "200px",
+    },
+  },
 });
 
 const SearchButton = (props) => {

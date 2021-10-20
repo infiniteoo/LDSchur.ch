@@ -25,6 +25,14 @@ const useStyles = makeStyles({
       fontSize: "50px",
     },
   },
+  "@media (max-width: 260px)": {
+    root: {
+      fontSize: "40px",
+    },
+    headline: {
+      fontSize: "20px",
+    },
+  },
 });
 
 const Header = () => {
