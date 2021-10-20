@@ -2,11 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Url = require("../models/Url");
 
-// @route GET /
-router.get("/", (req, res) => {
-  res.redirect("http://localhost:3000");
-});
-
 // @route GET /:code
 // @description Redirect to long/original URL
 router.get("/:code", async (req, res) => {
