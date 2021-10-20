@@ -41,6 +41,11 @@ const useStyles = makeStyles({
       gridTemplateColumns: "repeat(1, 1fr)",
     },
   },
+  "@media(max-width: 450px)": {
+    middle: {
+      fontSize: "40px",
+    },
+  },
   style: {
     fontSize: "15px",
   },
