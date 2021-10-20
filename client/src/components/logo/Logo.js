@@ -23,6 +23,11 @@ const useStyles = makeStyles({
       height: "auto",
     },
   },
+  "@media (max-width: 260px)": {
+    root: {
+      marginLeft: "-20px",
+    },
+  },
 });
 
 const Logo = () => {
